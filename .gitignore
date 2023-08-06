@@ -72,6 +72,5 @@ crashlytics-build.properties
 [Aa]ssets/[Ss]treamingAssets/aa/*
 
 #Temporarily Ignoring Packages Lock File as we are not installing any packages from git 
-packages-lock.json
-
+GameJam2023/Packages/packages-lock.json
 
