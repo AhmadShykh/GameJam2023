@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class ObjectSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     public GameObject[] objectsToSpawn;
     public float MinWait = 15f;
