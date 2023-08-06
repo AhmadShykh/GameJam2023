@@ -833,6 +833,8 @@ PrefabInstance:
       propertyPath: m_Pivot.x
       value: 0
 =======
+=======
+>>>>>>> d6a4dfc2c40d2c9963e2735c3f53b2221a7ed201
     - target: {fileID: 8170153791961219456, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
       propertyPath: m_AnchorMax.x
