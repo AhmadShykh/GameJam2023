@@ -74,3 +74,4 @@ crashlytics-build.properties
 #Temporarily Ignoring Packages Lock File as we are not installing any packages from git 
 GameJam2023/Packages/packages-lock.json
 
+GameJam2023/Packages/packages-lock.json
