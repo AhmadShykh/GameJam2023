@@ -451,8 +451,9 @@ MonoBehaviour:
   - {fileID: 9217375677963696048, guid: 5ef74e39b08683d44a9616c1564e61a7, type: 3}
   - {fileID: 3812087908403389627, guid: 81b1dd6e4f12ca84cb55a311a09d4350, type: 3}
   - {fileID: 6457921470150310891, guid: aeb9690f0f78d004eac25a9b5d46265b, type: 3}
-  minInterval: 1
-  maxInterval: 5
+  MinWait: 15
+  MaxWait: 30
+  DestoryWait: 5
 --- !u!4 &1658112137
 Transform:
   m_ObjectHideFlags: 0
