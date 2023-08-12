@@ -65,13 +65,11 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Packed Addressables
-[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-[Aa]ssets/[Ss]treamingAssets/aa.meta
-[Aa]ssets/[Ss]treamingAssets/aa/*
-
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
 #Temporarily Ignoring Packages Lock File as we are not installing any packages from git 
 GameJam2023/Packages/packages-lock.json
 
-GameJam2023/Packages/packages-lock.json
