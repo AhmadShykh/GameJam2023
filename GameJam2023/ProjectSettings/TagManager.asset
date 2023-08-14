@@ -8,6 +8,7 @@ TagManager:
   - mushroom
   - sugar
   - ant storage
+  - target
   layers:
   - Default
   - TransparentFX
