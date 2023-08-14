@@ -55,7 +55,7 @@ public class CollectingSugar : MonoBehaviour
 	{
 		if (GameObject.FindGameObjectsWithTag("sugar").Length != 0 && !HasSugar)
 		{
-            GoingLocation = GameObject.FindGameObjectsWithTag("sugar")[0].GetComponent<Transform>().position;
+            GoingLocation = GameObject.FindGameObjectWithTag("sugar").GetComponent<Transform>().position;
             SetAntAngle(transform.position, GoingLocation);
             
             
