@@ -916,6 +916,7 @@ GameObject:
   - component: {fileID: 1728375375}
   - component: {fileID: 1728375374}
   - component: {fileID: 1728375379}
+  - component: {fileID: 1728375380}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1049,7 +1050,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 1795672021}
-  beeSpeed: 10
+  beeSpeed: 60
+--- !u!114 &1728375380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728375372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4a2f4d93a29a04b90d2e218f6beb3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoliderAnt: {fileID: 919132149155446097, guid: a082ab55c7049d749ae851d27a4fd0c9,
+    type: 3}
+  WorkerAnt: {fileID: 919132149155446097, guid: 1d37820244541cc48b6dc1b90e3ff040,
+    type: 3}
 --- !u!224 &1795672020 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18,
@@ -1169,7 +1186,7 @@ Transform:
   m_GameObject: {fileID: 1992589038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 163.2, y: 30.2, z: -236.9}
+  m_LocalPosition: {x: 185.6, y: 30.2, z: -218}
   m_LocalScale: {x: 31.087, y: 31.087, z: 31.087}
   m_ConstrainProportionsScale: 0
   m_Children: []

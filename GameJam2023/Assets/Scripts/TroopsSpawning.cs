@@ -21,8 +21,16 @@ public class TroopsSpawning : MonoBehaviour
 			//Random X value where the ant will spawn
 			float XPos = Random.Range(XNegClamp, XPosClamp);
 			Vector3 AntPos = new Vector3(XPos, YPos, ZPos);
-
-			Instantiate(WorkerAnt, AntPos ,Quaternion.Euler(0,0,0));
+			Destroy(collision.gameObject);
+			Instantiate(SoliderAnt, AntPos ,Quaternion.Euler(0,0,0));
+		}
+		else if (collision.gameObject.tag == "mushroom")
+		{
+			//Random X value where the ant will spawn
+			float XPos = Random.Range(XNegClamp, XPosClamp);
+			Vector3 AntPos = new Vector3(XPos, YPos, ZPos);
+			Destroy(collision.gameObject);
+			Instantiate(WorkerAnt, AntPos, Quaternion.Euler(0, 0, 0));
 		}
 	}
 
