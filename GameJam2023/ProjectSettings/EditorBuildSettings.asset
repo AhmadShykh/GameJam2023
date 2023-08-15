@@ -15,5 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Ice World.unity
     guid: 75f76b3c63cc85743bddbdb037530f68
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: c274cc64de15719429413c3c60a536a5,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 327513cb9520ce848bdbc1f396459b5a, type: 2}
