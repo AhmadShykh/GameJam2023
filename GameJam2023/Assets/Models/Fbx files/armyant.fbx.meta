@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -82,7 +83,27 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: armyant(Clone)
+      parentName: 
+      position: {x: -0, y: 0.2879692, z: 1.1354392}
+      rotation: {x: -0.59459805, y: 0, z: -0, w: 0.8040231}
+      scale: {x: 24.122854, y: 24.122856, z: 24.122856}
+    - name: Sphere
+      parentName: armyant(Clone)
+      position: {x: 0.006908965, y: 0.05203322, z: -0.004281155}
+      rotation: {x: -0.12591343, y: 0, z: -0, w: 0.99204123}
+      scale: {x: 0.38499773, y: 0.38499767, z: 0.38499767}
+    - name: Circle
+      parentName: armyant(Clone)
+      position: {x: 0.00022759073, y: 0.04543829, z: 0.006338999}
+      rotation: {x: -0.22640453, y: -0.0009749524, z: 0.013783094, w: 0.97393537}
+      scale: {x: 1.7216048, y: 1.7216046, z: 1.7216046}
+    - name: Circle.001
+      parentName: armyant(Clone)
+      position: {x: 0.009593033, y: 0.033832766, z: -0.01531413}
+      rotation: {x: -0.5315636, y: 0.3355706, z: 0.106272064, w: 0.7704147}
+      scale: {x: 0.15582158, y: 0.15582156, z: 0.15582156}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -99,7 +120,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
