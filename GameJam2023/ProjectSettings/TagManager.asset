@@ -9,6 +9,7 @@ TagManager:
   - sugar
   - ant storage
   - target
+  - bee
   layers:
   - Default
   - TransparentFX

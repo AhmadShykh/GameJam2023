@@ -37,7 +37,7 @@ public class AntAttacking : MonoBehaviour
     }
     void ResetAttackPower()
 	{
-	    Counter += Time.;
+        Counter += Time.deltaTime;
         if(Counter == AttackingTime)
 		{
             CanAttack = true;
