@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+
 --- !u!1 &919064240027710505
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +620,7 @@ RectTransform:
   m_Children:
   - {fileID: 1835627483815265878}
   - {fileID: 5621961558186621188}
+
   - {fileID: 1639310127295939003}
   - {fileID: 7138988973169843745}
   - {fileID: 7844931055184887198}
@@ -694,6 +696,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+
 --- !u!1 &4637641790215979645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,7 +1118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6bb58cb1abf37374e8b6108111ebc79b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09647549909229a479d60473c2d21aed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1125,7 +1128,9 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+
 --- !u!1 &5990334662458513708
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1172,6 +1177,7 @@ GameObject:
   - component: {fileID: 1639310127295939003}
   - component: {fileID: 2824767996928344148}
   - component: {fileID: 893933681661893340}
+
   m_Layer: 5
   m_Name: MuteIcon
   m_TagString: Untagged
@@ -1193,26 +1199,32 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3902117316471048444}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -138, y: 111}
   m_SizeDelta: {x: 53.231262, y: 48.746582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2824767996928344148
+
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 7096101269644324056}
   m_CullTransparentMesh: 1
 --- !u!114 &893933681661893340
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 7096101269644324056}
+
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1236,7 +1248,9 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+
 --- !u!1 &8160984179816782988
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
