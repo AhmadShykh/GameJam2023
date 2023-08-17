@@ -12,7 +12,6 @@ public class AntAttacking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         CanAttack = true;
     }
 
@@ -51,7 +50,6 @@ public class AntAttacking : MonoBehaviour
         float ImpulseForce = 10f;
         if (collision.gameObject.tag == "target")
         {
-            Debug.Log("Hi");
             gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * ImpulseForce, ForceMode.Impulse);
         }
 

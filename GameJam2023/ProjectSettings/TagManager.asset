@@ -10,6 +10,7 @@ TagManager:
   - ant storage
   - target
   - bee
+  - Army Ant
   layers:
   - Default
   - TransparentFX

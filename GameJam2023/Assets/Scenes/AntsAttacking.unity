@@ -201,6 +201,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e943233a5d080164b9004a56b860fe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Army Ant
+      objectReference: {fileID: 0}
     - target: {fileID: 5233112405309087440, guid: e943233a5d080164b9004a56b860fe41,
         type: 3}
       propertyPath: m_Layer
