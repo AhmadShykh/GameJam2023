@@ -123,8 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-=======
+
 --- !u!1 &737859546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2678766045380483563, guid: d94afe77e585a0345b593a78b8fcc6e9,
@@ -245,7 +244,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6653705497104727540}
   m_PrefabAsset: {fileID: 0}
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
 --- !u!1 &769718714
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +404,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-=======
 --- !u!1001 &1151986484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1223,7 +1219,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 56286108399490106}
   m_PrefabAsset: {fileID: 0}
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
 --- !u!1 &1250928566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,9 +1313,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
---- !u!1001 &571607905114706326
-=======
+
 --- !u!1 &1562817022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6415866608290253797, guid: 4d4ec7799d6e46d4ba560017f7d72bc2,
@@ -1328,7 +1321,6 @@ GameObject:
   m_PrefabInstance: {fileID: 7893707391528526044}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &56286108399490106
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1336,14 +1328,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-    - target: {fileID: 434046206900160664, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2584893847963201203}
-    - target: {fileID: 998374241845710072, guid: c6155af5824e56f4e8aa92a059daa852,
-=======
     - target: {fileID: 277846052871423686, guid: 8df541d45fc9054499d49fe68f1262ee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2013,7 +1997,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1334023993878968183, guid: bc65bd141951ee34c908d97c5fdc9242,
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
+
         type: 3}
       propertyPath: m_Name
       value: Credits
@@ -2257,9 +2241,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-    - target: {fileID: 7385462378867852640, guid: 4e5688e8cf08f764495f970ef95fbc53,
-=======
+
     - target: {fileID: 1212452828496243797, guid: 4d4ec7799d6e46d4ba560017f7d72bc2,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2366,7 +2348,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1562817022}
     - target: {fileID: 3183629934238423688, guid: 4d4ec7799d6e46d4ba560017f7d72bc2,
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2491,22 +2472,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-    - target: {fileID: 8155886174213353442, guid: 0a0355897075d664da44da9d2ea873e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8155886174213353442, guid: 0a0355897075d664da44da9d2ea873e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8155886174213353442, guid: 0a0355897075d664da44da9d2ea873e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-=======
+
     - target: {fileID: 7534839611588330160, guid: 4d4ec7799d6e46d4ba560017f7d72bc2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2551,7 +2517,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 69
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2689,16 +2654,10 @@ SceneRoots:
   - {fileID: 1250928568}
   - {fileID: 769718717}
   - {fileID: 1081675781}
-<<<<<<< HEAD:GameJam2023/Assets/Scenes/MainMenu - Farhan.unity
-  - {fileID: 2896833476636092931}
-  - {fileID: 5267314057767119636}
-  - {fileID: 4727855865548673903}
-  - {fileID: 571607905114706326}
-=======
+
   - {fileID: 500885566875268952}
   - {fileID: 56286108399490106}
   - {fileID: 7893707391528526044}
   - {fileID: 6653705497104727540}
   - {fileID: 1208274045}
   - {fileID: 1151986484}
->>>>>>> a15d2aebaec0412913bb7da1dd919518060fc010:GameJam2023/Assets/Scenes/MainMenu.unity
