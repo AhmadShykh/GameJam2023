@@ -23,4 +23,13 @@ public class Target : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void healup(float v)
+    {
+        if(currentHealth >= MaxHealth) { 
+        }
+        else
+        {
+            currentHealth += v;
+        }
+    }
 }

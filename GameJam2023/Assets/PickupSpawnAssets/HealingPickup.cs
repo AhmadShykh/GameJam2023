@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class HealingPickup : MonoBehaviour
 {
+    public float amountToHeal=10f;
+    public Target target;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("target"))
+        if (other.CompareTag("HealingPotion"))
         {
-            Destroy(gameObject);
+            DestroyPickup destroyPickup = other.GetComponent<DestroyPickup>();
+            destroyPickup.destroyObj();
+            target.healup(10);
         }
     }
 }

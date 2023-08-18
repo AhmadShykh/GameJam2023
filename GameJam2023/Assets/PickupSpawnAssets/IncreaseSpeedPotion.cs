@@ -11,7 +11,7 @@ public class IncreaseSpeedPotion : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.CompareTag("HealingPotion"))
+        if (other.CompareTag("SpeedPotion"))
         {
             DestroyPickup destroyPickup = other.GetComponent<DestroyPickup>();
             destroyPickup.destroyObj();
