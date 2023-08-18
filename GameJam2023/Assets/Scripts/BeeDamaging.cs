@@ -12,7 +12,11 @@ public class BeeDamaging : MonoBehaviour
         if (other.gameObject.tag == "army ant")
         {
             other.gameObject.transform.Translate(Vector3.down * PushForce);
-            TotalHealth -= other.gameObject.GetComponent<AntAttacking>().Damage;
+            AntAttacking AntComponent = other.gameObject.GetComponent<AntAttacking>();
+            if (AntComponent.CanAttack) {
+                TotalHealth -= AntComponent.Damage;
+                AntComponent.CanAttack = false;
+            }
             if(TotalHealth <= 0)
 			{
                 Destroy(gameObject);
