@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4674210538226252082}
-  - component: {fileID: 6454855703774080685}
+  - component: {fileID: -9128351201962263938}
   - component: {fileID: 4681055762957353100}
   - component: {fileID: 4845565567891219715}
   - component: {fileID: 836458843151565379}
   m_Layer: 0
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: HealingPotion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6454855703774080685
+--- !u!114 &-9128351201962263938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7483481228524702734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89dc1f45d01f02d43984ae9c6463bd40, type: 3}
+  m_Script: {fileID: 11500000, guid: 68e61c41259013549b119527750545de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!33 &4681055762957353100
