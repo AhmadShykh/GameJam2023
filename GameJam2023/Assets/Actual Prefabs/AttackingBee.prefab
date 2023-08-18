@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 6442195335880355986}
   - component: {fileID: 4720983822550736167}
   - component: {fileID: 1366622314674645592}
+  - component: {fileID: 6107836275486907670}
   m_Layer: 0
   m_Name: AttackingBee
   m_TagString: bee
@@ -290,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeeSpeed: 3
+  Damage: 5
 --- !u!114 &4720983822550736167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +331,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &6107836275486907670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6993794414383092057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311dfe896ef0835489db04ddfd36f81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeeSpeed: 5
+  Damage: 5
 --- !u!1 &8262668340116157255
 GameObject:
   m_ObjectHideFlags: 0

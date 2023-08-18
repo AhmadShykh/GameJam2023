@@ -5,8 +5,8 @@ using UnityEngine;
 public class BeesAttacking : MonoBehaviour
 {
     GameObject Target;
-    [SerializeField] float BeeSpeed = 5f;
-    [SerializeField] float Damage = 5f;
+    [SerializeField] float BeeSpeed = 3f;
+    public float Damage = 5f;
     // Start is called before the first frame update
     void Start()
     {
