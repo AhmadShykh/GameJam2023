@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4188933128487358914}
   - component: {fileID: 9151604816960392666}
   - component: {fileID: 6162867844616026132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 696575375794655520}
   - component: {fileID: 1435929690407145844}
   - component: {fileID: 7123934046733054302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WorkerAnt
   m_TagString: worker ant
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 161251790193719981}
   - component: {fileID: 4774682239464386080}
   - component: {fileID: 7741915924512108882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

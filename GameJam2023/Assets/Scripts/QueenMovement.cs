@@ -7,6 +7,7 @@ public class QueenMovement : MonoBehaviour
     public FloatingJoystick joystick;
     float xMover, zMover, yaw;
     [SerializeField] float QueenSpeed = 10f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,4 +23,8 @@ public class QueenMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(-90, yaw-90, 0);
         transform.Translate(xMover, 0, zMover, Space.World);
     }
+
+    public void IncreaseSpeed(float speed) => QueenSpeed += speed;
+    public void DecreaseSpeed(float speed) => QueenSpeed -= speed;
+
 }
