@@ -256,17 +256,17 @@ PrefabInstance:
     - target: {fileID: 4111811514903805378, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: QueenSpeed
-      value: 1000
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.12
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
@@ -276,12 +276,12 @@ PrefabInstance:
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.80402297
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.59459823
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
@@ -296,7 +296,7 @@ PrefabInstance:
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -72.968
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
@@ -663,8 +663,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 3812087908403389627, guid: 81b1dd6e4f12ca84cb55a311a09d4350, type: 3}
-  - {fileID: 7483481228524702734, guid: b77bf740a1b753842861dc6a6d13b5bf, type: 3}
   - {fileID: 9217375677963696048, guid: 5ef74e39b08683d44a9616c1564e61a7, type: 3}
+  - {fileID: 7483481228524702734, guid: b77bf740a1b753842861dc6a6d13b5bf, type: 3}
   MinWait: 6
   MaxWait: 10
   DestoryWait: 5
