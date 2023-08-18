@@ -25,6 +25,5 @@ public class QueenMovement : MonoBehaviour
     }
 
     public void IncreaseSpeed(float speed) => QueenSpeed += speed;
-    public void DecreaseSpeed(float speed) => QueenSpeed -= speed;
 
 }
