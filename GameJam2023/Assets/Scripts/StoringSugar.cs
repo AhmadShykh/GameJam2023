@@ -10,12 +10,13 @@ public class StoringSugar : MonoBehaviour
     void Start()
     {
         currentSugar = 0;
-        SugarBar.SetMaxHealth(currentSugar );
+        SugarBar.SetMaxHealth(MaxSugar );
+        SugarBar.SetHealth(currentSugar);
     }
 
     public void GiveSugar(float v)
     {
-        currentSugar -= v;
+        currentSugar += v;
         SugarBar.SetHealth(currentSugar );
         if (currentSugar >= MaxSugar)
         {
