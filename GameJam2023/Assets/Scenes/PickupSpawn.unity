@@ -123,6 +123,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &58424177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8857707712654196361, guid: fb9ed8744a3448f40bad9eb18994b391,
+    type: 3}
+  m_PrefabInstance: {fileID: 651562656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &58424180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4111811514903805378, guid: fb9ed8744a3448f40bad9eb18994b391,
+    type: 3}
+  m_PrefabInstance: {fileID: 651562656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58424177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a846a444f06a81b4ab62c93167cd889f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &58424187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58424177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dc1f45d01f02d43984ae9c6463bd40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedUpTimer: 5
+  speedIncreaseBy: 10
+  queenMovement: {fileID: 58424180}
 --- !u!114 &389913509 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7102812759834525994, guid: 8e674208b092bac4384b5d44429f7a7a,
@@ -316,7 +349,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8857707712654196361, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 58424187}
   m_SourcePrefab: {fileID: 100100000, guid: fb9ed8744a3448f40bad9eb18994b391, type: 3}
 --- !u!1 &682070716
 GameObject:

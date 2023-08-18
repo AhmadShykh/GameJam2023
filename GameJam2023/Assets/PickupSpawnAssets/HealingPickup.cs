@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healingPickup : MonoBehaviour
+public class HealingPickup : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

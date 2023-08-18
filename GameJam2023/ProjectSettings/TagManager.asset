@@ -12,6 +12,8 @@ TagManager:
   - bee
   - army ant
   - worker ant
+  - SpawnSpider
+  - HealingPotion
   layers:
   - Default
   - TransparentFX
