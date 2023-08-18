@@ -6,7 +6,7 @@ public class AntAttacking : MonoBehaviour
 {
     GameObject Bee;
     [SerializeField] float BeeSpeed = 5f;
-    float AttackingTime = 5f;
+    [SerializeField] float AttackingTime = 5f;
     public bool CanAttack;
     public float Counter = 0;
     [SerializeField] public float Damage = 3f;
@@ -38,7 +38,7 @@ public class AntAttacking : MonoBehaviour
     void ResetAttackPower()
 	{
         Counter += Time.deltaTime;
-        if(Counter == AttackingTime)
+        if(Counter >= AttackingTime)
 		{
             CanAttack = true;
             Counter = 0;

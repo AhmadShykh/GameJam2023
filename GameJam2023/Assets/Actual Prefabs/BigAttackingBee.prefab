@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7212846620810261449}
   - component: {fileID: 2201112278413554252}
   - component: {fileID: 7272174503496716608}
+  - component: {fileID: 4573444778591377064}
   m_Layer: 0
   m_Name: BigAttackingBee
   m_TagString: bee
@@ -187,7 +188,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -228,7 +229,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 114
   m_CollisionDetection: 0
@@ -246,6 +247,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeeSpeed: 2
   Damage: 10
+--- !u!114 &4573444778591377064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285150530310973823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0403381ef36a3774dbc0ebddd1ffbeba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalHealth: 15
+  PushForce: 6
 --- !u!1 &7153957410587388007
 GameObject:
   m_ObjectHideFlags: 0
