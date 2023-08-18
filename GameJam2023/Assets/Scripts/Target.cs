@@ -18,7 +18,7 @@ public class Target : MonoBehaviour
     {
         currentHealth -= v;
         healthBar.SetHealth(currentHealth);
-        if(currentHealth==0)
+        if(currentHealth <= 0)
         {
             Destroy(gameObject);
         }

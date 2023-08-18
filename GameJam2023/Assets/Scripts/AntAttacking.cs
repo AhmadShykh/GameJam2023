@@ -9,6 +9,7 @@ public class AntAttacking : MonoBehaviour
     float AttackingTime = 5f;
     public bool CanAttack;
     public float Counter = 0;
+    [SerializeField] public float Damage = 3f;
     // Start is called before the first frame update
     void Start()
     {

@@ -16,8 +16,12 @@ public class BeesAttacking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SetAntAngle(Target.transform.position);
-        transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, BeeSpeed* Time.deltaTime);
+        if(Target != null)
+		{
+            SetAntAngle(Target.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, BeeSpeed * Time.deltaTime);
+        }
+        
     }
 
     private void SetAntAngle(Vector3 DesPos)

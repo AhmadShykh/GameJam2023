@@ -6,11 +6,7 @@ public class QueenDamaging : MonoBehaviour
 {
     [SerializeField] float PushForce = 5f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
 	private void OnTriggerEnter(Collider other)
 	{
