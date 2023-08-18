@@ -19,7 +19,7 @@ public class QueenMovement : MonoBehaviour
         xMover = joystick.Horizontal * QueenSpeed * Time.deltaTime;
         zMover = joystick.Vertical * QueenSpeed * Time.deltaTime;
         if (joystick.Vertical != 0 && joystick.Horizontal != 0) yaw = -((Mathf.Atan2(joystick.Vertical, joystick.Horizontal) * 180) / Mathf.PI);
-        transform.rotation = Quaternion.Euler(0, yaw, 0);
+        transform.rotation = Quaternion.Euler(-90, yaw-90, 0);
         transform.Translate(xMover, 0, zMover, Space.World);
     }
 }
