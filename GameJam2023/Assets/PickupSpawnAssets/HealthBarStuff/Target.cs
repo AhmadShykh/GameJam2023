@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    public int MaxHealth = 100;
-    public int currentHealth;
+    public float MaxHealth = 100;
+    public float currentHealth;
     public HealthBar healthBar;
     void Start()
     {
@@ -14,7 +14,7 @@ public class Target : MonoBehaviour
         healthBar.SetMaxHealth(MaxHealth);
     }
 
-    public void TakeDamage(int v)
+    public void TakeDamage(float v)
     {
         currentHealth -= v;
         healthBar.SetHealth(currentHealth);

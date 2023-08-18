@@ -10,7 +10,8 @@ TagManager:
   - ant storage
   - target
   - bee
-  - Army Ant
+  - army ant
+  - worker ant
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - UI
   - Enemy
   - Ant
-  - 
-  - 
+  - Woker Ant
+  - Sugar
   - 
   - 
   - 

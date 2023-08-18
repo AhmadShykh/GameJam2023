@@ -5,10 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Attacker : MonoBehaviour
 {
-    public Transform target;
-    public float speed = 2f;
-    private Target targetScript;
-    public float pushbackDistance = 3f;
+    public float Damage = 5;
 
     void Update()
     {
