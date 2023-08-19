@@ -700,7 +700,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
-  m_SizeDelta: {x: 496, y: 5396.038}
+
+  m_SizeDelta: {x: 496, y: 3965.545}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5574907486124135994
 CanvasRenderer:
@@ -849,30 +850,86 @@ MonoBehaviour:
 
 
 
-    SPECIAL
-    THANKS
+
+
+
+    REFERENCES
+
+
+    GAME
+    UI / WORLDS PACK
+
+
+    UPKLYAK
+
+
+
+
+
+    JOYSTICK PACK
+
+
+    FENERAX STUDIOS
+
+
+
+
+
+    SKYBOX
+    PACK
+
+
+    AVIONX
+
+
+
+
+
+    SPIDERS PACK
+
+
+    DANTE''S ANVIL
+
+
+
+
+
+    POWERUPS
+    PACK
+
+
+    AURYNSKY
+
+
+
+
+
+    SPECIAL THANKS
 
 
     YASER AWAN
 
     AIYAN HUMAYON
 
-    MOHSIN MEHMOOD
+    MOHSIN
+    MEHMOOD
 
 
 
 
 
-    SPECIAL
-    THANKS
+    SPECIAL THANKS
 
 
     @SAJEELSTICWORLD
 
     @BRACKEYS
 
+    @BRACKEYS
 
-    AND TO THOSE WHO BELIEVED'
+
+    AND
+    TO THOSE WHO BELIEVED'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcacc77eeb3958d4487849e9240132ee, type: 2}
   m_sharedMaterial: {fileID: -6222805798121005934, guid: dcacc77eeb3958d4487849e9240132ee,
