@@ -14,6 +14,7 @@ TagManager:
   - worker ant
   - SpawnSpider
   - HealingPotion
+  - SpeedPotion
   layers:
   - Default
   - TransparentFX

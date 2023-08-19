@@ -156,6 +156,20 @@ MonoBehaviour:
   speedUpTimer: 5
   speedIncreaseBy: 10
   queenMovement: {fileID: 58424180}
+--- !u!114 &58424194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58424177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c00a65ba9e4914439a72e6394f20646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToHeal: 10
+  target: {fileID: 0}
 --- !u!114 &389913509 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7102812759834525994, guid: 8e674208b092bac4384b5d44429f7a7a,
@@ -281,6 +295,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1093897721321303972, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1264450988}
     - target: {fileID: 4111811514903805378, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: joystick
@@ -353,6 +372,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8857707712654196361, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       insertIndex: 2
+      addedObject: {fileID: 58424194}
+    - targetCorrespondingSourceObject: {fileID: 8857707712654196361, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      insertIndex: 3
       addedObject: {fileID: 58424187}
   m_SourcePrefab: {fileID: 100100000, guid: fb9ed8744a3448f40bad9eb18994b391, type: 3}
 --- !u!1 &682070716
@@ -447,6 +470,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1264450988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2266751702993970590, guid: 8e674208b092bac4384b5d44429f7a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1546472678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0019b79b84e98845ada458cf7d1ea89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1519437657 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8160870630368340279, guid: 8e674208b092bac4384b5d44429f7a7a,
@@ -461,10 +496,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3899049748744598748, guid: 8e674208b092bac4384b5d44429f7a7a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899049748744598748, guid: 8e674208b092bac4384b5d44429f7a7a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4345293271050415009, guid: 8e674208b092bac4384b5d44429f7a7a,
         type: 3}
       propertyPath: m_Name
       value: Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7103609654852728620, guid: 8e674208b092bac4384b5d44429f7a7a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7103609654852728620, guid: 8e674208b092bac4384b5d44429f7a7a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8160870630368340279, guid: 8e674208b092bac4384b5d44429f7a7a,
         type: 3}
