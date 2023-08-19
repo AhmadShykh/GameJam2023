@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2851016355092044608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -700,7 +700,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
-  m_SizeDelta: {x: 496, y: 1507}
+  m_SizeDelta: {x: 496, y: 5396.038}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5574907486124135994
 CanvasRenderer:
@@ -730,7 +730,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TEAM LEAD /
+  m_text: '
+
+    TEAM LEAD /
 
     GAME DESIGNER /
 
@@ -740,6 +742,9 @@ MonoBehaviour:
     FARHAN KHAN
 
 
+
+
+
     GAME
     PROGRAMMER
 
@@ -747,10 +752,16 @@ MonoBehaviour:
     AHMAD ALI
 
 
+
+
+
     GAME PROGRAMMER
 
 
     ADIL HUSSAIN
+
+
+
 
 
     GAME
@@ -760,10 +771,82 @@ MonoBehaviour:
     FAIQ ALI
 
 
+
+
+
     ASSISTANT GAME ARTIST / MOTIVATOR
 
 
-    @SAJEELISTICWORLD
+    @SAJEELSTICWORLD
+
+
+
+
+
+    REFERENCES
+
+
+    GAME
+    UI
+
+    https://www.freepik.com/free-vector/cartoon-set-wood-paper-game-ui-boards_38591358.htm
+
+
+
+
+
+    GAME
+    UI
+
+    https://www.freepik.com/free-vector/cartoon-set-win-lose-game-boards_39803968.htm
+
+
+
+
+
+    WORLDS
+    PACK
+
+    https://www.freepik.com/free-vector/floating-islands-set-flying-game-platforms-rock_31745219.htm
+
+
+
+
+
+    JOYSTICK
+    PACK
+
+    https://assetstore.unity.com/packages/p/joystick-pack-107631
+
+
+
+
+
+    SKYBOX
+    PACK
+
+    https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
+
+
+
+
+
+    SPIDERS
+    PACK
+
+    https://assetstore.unity.com/packages/3d/characters/animals/insects/fantasy-spider-236418
+
+
+
+
+
+    Powerups
+    Pack
+
+    https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764
+
+
+
 
 
     SPECIAL
@@ -777,11 +860,16 @@ MonoBehaviour:
     MOHSIN MEHMOOD
 
 
+
+
+
     SPECIAL
     THANKS
 
 
-    @SAJEELISTICWORLD
+    @SAJEELSTICWORLD
+
+    @BRACKEYS
 
 
     AND TO THOSE WHO BELIEVED'
@@ -813,8 +901,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
-  m_fontSizeBase: 34
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

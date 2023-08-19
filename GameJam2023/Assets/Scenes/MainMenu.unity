@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 1081675781}
   - component: {fileID: 1081675780}
   - component: {fileID: 1081675779}
+  - component: {fileID: 1081675782}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -364,6 +365,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1081675782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081675778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a118e0ebadd1340b69f86bb93b8785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenu: {fileID: 737859546}
+  LevelScreen: {fileID: 1151986485}
 --- !u!1001 &1151986484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1094,7 +1109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833b8fe7f384b2e44a3ce370d679e862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoingToNextLevel: 0
 --- !u!4 &1866639281
 Transform:
   m_ObjectHideFlags: 0
@@ -1603,11 +1617,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credits
       objectReference: {fileID: 0}
-    - target: {fileID: 998374241845710072, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2851016355092044608, guid: c6155af5824e56f4e8aa92a059daa852,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1713,180 +1722,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 737859546}
-    - target: {fileID: 4294612715986043835, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_text
-      value: '
-
-        TEAM LEAD /
-
-        GAME DESIGNER /
-
-        UI DESIGNER
-
-
-        FARHAN
-        KHAN
-
-
-
-
-
-        GAME PROGRAMMER
-
-
-        AHMAD ALI
-
-
-
-
-
-        GAME PROGRAMMER
-
-
-        ADIL
-        HUSSAIN
-
-
-
-
-
-        GAME PROGRAMMER
-
-
-        FAIQ ALI
-
-
-
-
-
-        ASSISTANT
-        GAME ARTIST / MOTIVATOR
-
-
-        @SAJEELSTICWORLD
-
-
-
-
-
-        REFERENCES
-
-
-        GAME
-        UI
-
-        https://www.freepik.com/free-vector/cartoon-set-wood-paper-game-ui-boards_38591358.htm
-
-
-
-
-
-        GAME
-        UI
-
-        https://www.freepik.com/free-vector/cartoon-set-win-lose-game-boards_39803968.htm
-
-
-
-
-
-        WORLDS
-        PACK
-
-        https://www.freepik.com/free-vector/floating-islands-set-flying-game-platforms-rock_31745219.htm
-
-
-
-
-
-        JOYSTICK
-        PACK
-
-        https://assetstore.unity.com/packages/p/joystick-pack-107631
-
-
-
-
-
-        SKYBOX
-        PACK
-
-        https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
-
-
-
-
-
-        SPIDERS
-        PACK
-
-        https://assetstore.unity.com/packages/3d/characters/animals/insects/fantasy-spider-236418
-
-
-
-
-
-        Powerups
-        Pack
-
-        https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764
-
-
-
-
-
-        SPECIAL
-        THANKS
-
-
-        YASER AWAN
-
-        AIYAN HUMAYON
-
-        MOHSIN MEHMOOD
-
-
-
-
-
-        SPECIAL
-        THANKS
-
-
-        @SAJEELSTICWORLD
-
-        @BRACKEYS
-
-
-        AND TO THOSE
-        WHO BELIEVED'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294612715986043835, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4294612715986043835, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 7336949660087513194, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 5396.038
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629349231207694200, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8629349231207694200, guid: c6155af5824e56f4e8aa92a059daa852,
-        type: 3}
-      propertyPath: m_ShowMaskGraphic
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
