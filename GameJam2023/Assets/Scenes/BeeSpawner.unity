@@ -241,11 +241,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e425e6f8f644d448631e4cc7110ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaveNum: 0
+  timeDelay: 5
   smallBee: {fileID: 5557958887617036931, guid: 7d4ea785d542a66439cf90a7547e476a,
     type: 3}
   bigBee: {fileID: 6982599141659677375, guid: fc8130da6411b3240aca65f880fd6590, type: 3}
-  WaveNum: 0
-  timeDelay: 5
+  YPos: 1.7
+  ZPos: 16.5
+  XNegPos: -6.5
+  XPositivePos: 12.5
 --- !u!1 &343546851
 GameObject:
   m_ObjectHideFlags: 0
