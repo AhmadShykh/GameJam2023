@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1251383178532324952}
   - component: {fileID: 7658632103738323358}
   - component: {fileID: 5145828671124970010}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1625497285163361262}
   - component: {fileID: 353997605862531370}
   - component: {fileID: 990860279225115945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Icosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5807221183091206025}
   - component: {fileID: 5815628155160474152}
   - component: {fileID: 8449418391649584716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 8358402155199527510}
   - component: {fileID: 2666015046426623799}
   - component: {fileID: 5439734303936796404}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 2313676139094649265}
   - component: {fileID: 7326419305677941564}
   - component: {fileID: 6970330423722765840}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4659103472145065639}
   - component: {fileID: 1192688208789432146}
-  m_Layer: 0
+  - component: {fileID: 7299795872766217320}
+  m_Layer: 3
   m_Name: antHouse
   m_TagString: ant storage
   m_Icon: {fileID: 0}
@@ -440,7 +441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5157297420440556435}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.4948554, y: -0.66076493, z: -7.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -470,12 +471,27 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 4.0670805, y: 8.913818, z: 4.3943367}
   m_Center: {x: 0.0548954, y: 4.4497337, z: 0.1597786}
+--- !u!114 &7299795872766217320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157297420440556435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa0bf03175c040498b79a0b446620d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxSugar: 100
+  currentSugar: 0
+  SugarBar: {fileID: 0}
 --- !u!1 &6283928019229536418
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +503,7 @@ GameObject:
   - component: {fileID: 2163929246578130122}
   - component: {fileID: 4459671162471432629}
   - component: {fileID: 2170729476162010512}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +588,7 @@ GameObject:
   - component: {fileID: 7935790814099551069}
   - component: {fileID: 6080414117593180938}
   - component: {fileID: 5483112187560760191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +671,7 @@ GameObject:
   - component: {fileID: 1151661320752939429}
   - component: {fileID: 8739596224831495489}
   - component: {fileID: 2192043861783661126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Icosphere.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

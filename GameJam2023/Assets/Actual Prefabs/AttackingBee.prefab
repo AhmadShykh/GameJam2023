@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1082969625387860663}
   - component: {fileID: 8367428026786190287}
   - component: {fileID: 24664249920247558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: bee
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4512823262728354731}
   - component: {fileID: 785713149861537393}
   - component: {fileID: 5793645311357507506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: bee
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 6442195335880355986}
   - component: {fileID: 4720983822550736167}
   - component: {fileID: 1366622314674645592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackingBee
   m_TagString: bee
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 1030562458523086179}
   - component: {fileID: 3330626802339637925}
   - component: {fileID: 5487901324717500926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wing
   m_TagString: bee
   m_Icon: {fileID: 0}

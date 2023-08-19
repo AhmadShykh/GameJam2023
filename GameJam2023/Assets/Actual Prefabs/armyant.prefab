@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4159383796752400589}
   - component: {fileID: 946007045590593316}
   - component: {fileID: 2483165532339118670}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Circle.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2923835343077124400}
   - component: {fileID: 8818456018726334743}
   - component: {fileID: 7734883611993372250}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 7564108455301271699}
   - component: {fileID: 3240585248529473292}
   - component: {fileID: 1929187018999715036}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 3611769391604790620}
   - component: {fileID: 3487303261874220990}
   - component: {fileID: 677895542174409270}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: armyant
   m_TagString: army ant
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ MonoBehaviour:
   AttackingTime: 3.5
   CanAttack: 0
   Counter: 0
-  Damage: 6
+  Damage: 23.38
 --- !u!114 &677895542174409270
 MonoBehaviour:
   m_ObjectHideFlags: 0

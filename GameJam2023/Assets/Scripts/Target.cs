@@ -20,7 +20,7 @@ public class Target : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
     public void healup(float v)

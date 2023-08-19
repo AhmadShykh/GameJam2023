@@ -62,23 +62,25 @@ public class CollectingSugar : MonoBehaviour
             
         }
 	}
-	private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider other)
 	{
-		if(collision.gameObject.tag == "sugar")
-		{
+        if (other.gameObject.tag == "sugar")
+        {
             if (HasSugar == false)
-			{
-                Destroy(collision.gameObject);
+            {
+                Destroy(other.gameObject);
                 HasSugar = true;
                 FoundSugar = true;
             }
-		}
-        else if(collision.gameObject.tag == "ant storage")
-		{
+        }
+        else if (other.gameObject.tag == "ant storage")
+        {
+            Debug.Log("hi");
             GoingLocation = transform.position;
             FoundSugar = false;
-            collision.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
+            other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
             HasSugar = false;
-		}
-	}
+        }
+    }
+	
 }

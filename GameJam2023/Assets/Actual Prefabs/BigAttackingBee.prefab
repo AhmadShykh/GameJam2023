@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8384281582685989730}
   - component: {fileID: 1398418348325902308}
   - component: {fileID: 53708642029762295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2201112278413554252}
   - component: {fileID: 7272174503496716608}
   - component: {fileID: 4573444778591377064}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BigAttackingBee
   m_TagString: bee
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 114
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &7272174503496716608
 MonoBehaviour:
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 7088804711523976742}
   - component: {fileID: 7217425758447659022}
   - component: {fileID: 4392565561619945237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

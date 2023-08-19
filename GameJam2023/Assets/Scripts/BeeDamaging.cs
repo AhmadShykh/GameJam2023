@@ -8,7 +8,6 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] float PushForce = 4f;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hi");
         if (other.gameObject.tag == "army ant")
         {
             other.gameObject.transform.Translate(Vector3.down * PushForce);
