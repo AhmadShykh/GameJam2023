@@ -10,20 +10,24 @@ TagManager:
   - ant storage
   - target
   - bee
-  - Army Ant
+  - army ant
+  - worker ant
+  - SpawnSpider
+  - HealingPotion
+  - SpeedPotion
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Storage
   - Water
   - UI
   - Enemy
   - Ant
-  - 
-  - 
-  - 
-  - 
+  - Woker Ant
+  - Sugar
+  - Ground
+  - Queen
   - 
   - 
   - 

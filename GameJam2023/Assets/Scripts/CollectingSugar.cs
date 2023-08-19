@@ -10,6 +10,7 @@ public class CollectingSugar : MonoBehaviour
     bool FoundSugar, HasSugar;
     Vector3 GoingLocation;
     GameObject StorageLocation;
+    [SerializeField] float SugarAmount = 10f;
     
     // Start is called before the first frame update
     void Start()
@@ -76,6 +77,7 @@ public class CollectingSugar : MonoBehaviour
 		{
             GoingLocation = transform.position;
             FoundSugar = false;
+            collision.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
             HasSugar = false;
 		}
 	}

@@ -6,9 +6,10 @@ public class AntAttacking : MonoBehaviour
 {
     GameObject Bee;
     [SerializeField] float BeeSpeed = 5f;
-    float AttackingTime = 5f;
+    [SerializeField] float AttackingTime = 5f;
     public bool CanAttack;
-    float Counter = 0;
+    public float Counter = 0;
+    [SerializeField] public float Damage = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class AntAttacking : MonoBehaviour
     void ResetAttackPower()
 	{
         Counter += Time.deltaTime;
-        if(Counter == AttackingTime)
+        if(Counter >= AttackingTime)
 		{
             CanAttack = true;
             Counter = 0;
@@ -48,9 +49,9 @@ public class AntAttacking : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         float ImpulseForce = 10f;
-        if (collision.gameObject.tag == "target")
+        if (collision.gameObject.tag == "bee")
         {
-            gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * ImpulseForce, ForceMode.Impulse);
+            gameObject.GetComponent<Rigidbody>().AddForce(-transform.up * ImpulseForce, ForceMode.Impulse);
         }
 
     }
@@ -60,8 +61,7 @@ public class AntAttacking : MonoBehaviour
         Vector3 diff = DesPos - transform.position;
 
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg - 90;
-        Quaternion direction = Quaternion.Euler(0, angle, 0);
+        Quaternion direction = Quaternion.Euler(-90, angle, 0);
         transform.rotation = direction;
     }
-
 }
