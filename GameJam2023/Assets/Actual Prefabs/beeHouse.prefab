@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaveNum: 0
-  timeDelay: 30
+  timeDelay: 45
   smallBee: {fileID: 6993794414383092057, guid: 7c33fda967f185a408d5dfdca7d9a80b,
     type: 3}
   bigBee: {fileID: 5285150530310973823, guid: 471cd082fc5e241459c0c8d8d5d7f071, type: 3}
