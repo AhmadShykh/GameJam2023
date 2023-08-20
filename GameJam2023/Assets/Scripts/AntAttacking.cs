@@ -46,22 +46,15 @@ public class AntAttacking : MonoBehaviour
 	
 	}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        float ImpulseForce = 10f;
-        if (collision.gameObject.tag == "bee")
-        {
-            gameObject.GetComponent<Rigidbody>().AddForce(-transform.up * ImpulseForce, ForceMode.Impulse);
-        }
-
-    }
-
     private void SetAntAngle(Vector3 DesPos)
     {
         Vector3 diff = DesPos - transform.position;
 
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg - 90;
-        Quaternion direction = Quaternion.Euler(-90, angle, 0);
+        float YAngle = 0f;
+        if (this.CompareTag("worker ant"))
+            YAngle = -90;
+        Quaternion direction = Quaternion.Euler(YAngle, angle, 0);
         transform.rotation = direction;
     }
 }

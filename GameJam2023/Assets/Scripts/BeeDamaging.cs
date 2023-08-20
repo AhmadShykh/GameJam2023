@@ -10,7 +10,10 @@ public class BeeDamaging : MonoBehaviour
     {
         if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
         {
-            other.gameObject.transform.Translate(Vector3.down * PushForce);
+            Vector3 PushPos;
+            if (other.gameObject.tag == "army ant") PushPos = Vector3.down;
+            else PushPos = Vector3.forward;
+            other.gameObject.transform.Translate(PushPos * PushForce);
             AntAttacking AntComponent = other.gameObject.GetComponent<AntAttacking>();
             if (AntComponent.CanAttack) {
                 TotalHealth -= AntComponent.Damage;
