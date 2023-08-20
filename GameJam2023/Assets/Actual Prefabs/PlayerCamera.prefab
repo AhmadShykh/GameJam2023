@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ApplyAfter: 3
-  m_Tilt: 2.12
+  m_Tilt: 12
   m_Pan: 0
   m_Dutch: 0
   m_ZoomScale: 1
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 2.16, z: -9.76}
+  m_FollowOffset: {x: 0, y: 5.15, z: -9.67}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1

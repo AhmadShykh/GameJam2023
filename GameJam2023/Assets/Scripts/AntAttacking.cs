@@ -52,7 +52,7 @@ public class AntAttacking : MonoBehaviour
 
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg - 90;
         float YAngle = 0f;
-        if (this.CompareTag("worker ant"))
+        if (this.CompareTag("army ant"))
             YAngle = -90;
         Quaternion direction = Quaternion.Euler(YAngle, angle, 0);
         transform.rotation = direction;
