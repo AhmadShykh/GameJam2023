@@ -25,13 +25,4 @@ public class Target : MonoBehaviour
             Finishing.LoseGame();
         }
     }
-    public void healup(float v)
-    {
-        if(currentHealth >= MaxHealth) { 
-        }
-        else
-        {
-            currentHealth += v;
-        }
-    }
 }

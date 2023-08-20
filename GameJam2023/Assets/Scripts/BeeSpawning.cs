@@ -31,7 +31,7 @@ public class BeeSpawning : MonoBehaviour
     }
     void SpawnWave(int waveNum)
     {
-        int smallBeesCount = (2 * (waveNum+1)) + 1;
+        int smallBeesCount = (2 * (waveNum)) + 1;
         int bigBeesCount = waveNum;
 
         for (int i = 0; i < smallBeesCount; i++)

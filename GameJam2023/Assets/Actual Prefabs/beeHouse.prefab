@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2516413292145928708}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.44, y: 1.19, z: 37.59}
   m_LocalScale: {x: 2.2474043, y: 2.2474043, z: 2.2474043}
   m_ConstrainProportionsScale: 0
@@ -138,14 +138,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaveNum: 0
-  timeDelay: 5
+  timeDelay: 60
   smallBee: {fileID: 6993794414383092057, guid: 7c33fda967f185a408d5dfdca7d9a80b,
     type: 3}
   bigBee: {fileID: 5285150530310973823, guid: 471cd082fc5e241459c0c8d8d5d7f071, type: 3}
   YPos: 1.7
-  ZPos: 16.5
-  XNegPos: -6.5
-  XPositivePos: 12.5
+  ZPos: 25.5
+  XNegPos: -0.5
+  XPositivePos: 0.5
 --- !u!1 &3027744104131013660
 GameObject:
   m_ObjectHideFlags: 0

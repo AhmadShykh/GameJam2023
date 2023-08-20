@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/W1L1.unity
     guid: 9cd8e70ab3a8f6240bb4a4f52247282c
-  - enabled: 1
-    path: Assets/Scenes/Fire World.unity
-    guid: e3a977cacadea2041a1da43018617881
-  - enabled: 1
-    path: Assets/Scenes/Ice World.unity
-    guid: 75f76b3c63cc85743bddbdb037530f68
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: c274cc64de15719429413c3c60a536a5,
       type: 2}

@@ -16,6 +16,7 @@ TagManager:
   - HealingPotion
   - SpeedPotion
   - NextLevel
+  - Spider
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Queen
   - army ant
   - plants
-  - 
+  - pickups
   - 
   - 
   - 

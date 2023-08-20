@@ -8,7 +8,7 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] float PushForce = 4f;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "army ant")
+        if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
         {
             other.gameObject.transform.Translate(Vector3.down * PushForce);
             AntAttacking AntComponent = other.gameObject.GetComponent<AntAttacking>();
