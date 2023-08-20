@@ -392,8 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78c44e615a480f4497e7580648b404f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeeSpeed: 3
-  AttackingTime: 3.5
+  BeeSpeed: 4
+  AttackingTime: 2.5
   CanAttack: 0
   Counter: 0
-  Damage: 7
+  Damage: 5

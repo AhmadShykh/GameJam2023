@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeeSpeed: 2
-  Damage: 10
+  Damage: 6
 --- !u!114 &4573444778591377064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TotalHealth: 15
-  PushForce: 6
+  PushForce: 3
 --- !u!1 &7153957410587388007
 GameObject:
   m_ObjectHideFlags: 0

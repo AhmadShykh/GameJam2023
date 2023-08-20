@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  QueenSpeed: 10
+  QueenSpeed: 5
 --- !u!114 &1462906679156908143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,7 +435,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4990561146e372408c5d7ded8933269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PushForce: 5
+  PushForce: 3.5
+  WorkerAnt: {fileID: 0}
+  ArmyAnt: {fileID: 0}
+  YPos: 1.3
+  ZPos: -19.5
+  XNegPos: -6.5
+  XPositivePos: 12.5
 --- !u!114 &1093897721321303972
 MonoBehaviour:
   m_ObjectHideFlags: 0

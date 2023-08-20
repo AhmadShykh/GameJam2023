@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25dcb363dc6e064e9d42461076c77cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AntSpeed: 5
+  AntSpeed: 3
   SugarAmount: 10
 --- !u!1 &8337580401419979202
 GameObject:
