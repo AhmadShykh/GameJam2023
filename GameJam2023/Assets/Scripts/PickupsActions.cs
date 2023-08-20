@@ -23,8 +23,12 @@ public class PickupsActions : MonoBehaviour
         if (other.CompareTag("HealingPotion"))
         {
             Destroy(other.gameObject);
-
-            this.GetComponent<Target>().TakeDamage(-10);
+            float CurrentHealth = this.GetComponent<Target>().currentHealth;
+            float MaxHealth = this.GetComponent<Target>().MaxHealth;
+            if (CurrentHealth + 10 >= MaxHealth)
+                this.GetComponent<Target>().TakeDamage(-(MaxHealth-CurrentHealth));
+            else
+                this.GetComponent<Target>().TakeDamage(-HealingValue);
         }
         else if (other.CompareTag("SpawnSpider"))
         {

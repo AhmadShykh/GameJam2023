@@ -474,12 +474,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealingValue: 10
-  SpiderObject: {fileID: 0}
+  SpiderObject: {fileID: 8688803186435683820, guid: fd02805ee801de64a828e8190cac7784,
+    type: 3}
   XSpawn: 15
   ZSpawn: 25
   YSpawn: 1.01
-  SpeedIncreasedBy: 3
-  DecreaseSpeedAfter: 4
+  SpeedIncreasedBy: 5
+  DecreaseSpeedAfter: 6
 --- !u!1 &9007638922670981693
 GameObject:
   m_ObjectHideFlags: 0

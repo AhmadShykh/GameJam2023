@@ -141,6 +141,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1933776290453987184, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      propertyPath: SpiderObject
+      value: 
+      objectReference: {fileID: 8688803186435683820, guid: fd02805ee801de64a828e8190cac7784,
+        type: 3}
+    - target: {fileID: 1933776290453987184, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      propertyPath: SpeedIncreasedBy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933776290453987184, guid: fb9ed8744a3448f40bad9eb18994b391,
+        type: 3}
+      propertyPath: DecreaseSpeedAfter
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4111811514903805378, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: joystick
