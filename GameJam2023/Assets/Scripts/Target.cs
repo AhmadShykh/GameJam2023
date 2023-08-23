@@ -20,7 +20,7 @@ public class Target : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0)
         {
-            Destroy(transform.parent.gameObject);
+            Destroy(transform.gameObject);
             FinishLevel Finishing = GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishLevel>();
             Finishing.LoseGame();
         }
