@@ -6,6 +6,9 @@ public class BeeDamaging : MonoBehaviour
 {
     [SerializeField] float TotalHealth = 10f;
     [SerializeField] float PushForce = 4f;
+    [Header("Particle Effects")]
+    [SerializeField] GameObject HPHitParticle;
+    [SerializeField] float ForceScatter = 5f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
@@ -19,10 +22,22 @@ public class BeeDamaging : MonoBehaviour
                 TotalHealth -= AntComponent.Damage;
                 AntComponent.CanAttack = false;
             }
+            ApplyHpParticleEffect(AntComponent.Damage);
             if(TotalHealth <= 0)
 			{
                 Destroy(gameObject);
 			}
+
         }
+    }
+    void ApplyHpParticleEffect(float AntDamage)
+    {
+        Vector3 ParticlePos = new Vector3(transform.position.x, transform.position.y + 10f, transform.position.z);
+        GameObject Particle = Instantiate(HPHitParticle, transform.position, transform.rotation);
+        Particle.GetComponent<BillBoard>().Camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        GameObject HPLabel = Particle.transform.GetChild(0).gameObject;
+        HPLabel.GetComponent<TextMesh>().text = "-" + AntDamage.ToString();
+        HPLabel.GetComponent<TextMesh>().color = new Color(255, 0, 0);
+        Particle.GetComponent<Rigidbody>().AddForce(new Vector3(ParticlePos.x + Random.Range(-ForceScatter, ForceScatter), ParticlePos.y + Random.Range(-ForceScatter, ForceScatter), ParticlePos.z + Random.Range(-ForceScatter, ForceScatter)));
     }
 }

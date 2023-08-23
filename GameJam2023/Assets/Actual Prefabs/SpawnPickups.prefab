@@ -45,9 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
-  - {fileID: 3812087908403389627, guid: 81b1dd6e4f12ca84cb55a311a09d4350, type: 3}
-  - {fileID: 9217375677963696048, guid: 5ef74e39b08683d44a9616c1564e61a7, type: 3}
-  - {fileID: 7483481228524702734, guid: b77bf740a1b753842861dc6a6d13b5bf, type: 3}
+  - {fileID: 1000013356204050, guid: 676e107eeafc5524b97910d76516565d, type: 3}
+  - {fileID: 1000010714891294, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 3}
+  - {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
   MinWait: 6
   MaxWait: 10
-  DestoryWait: 6
+  DestoryWait: 12
+  XPosRange: 20.5
+  XNegRange: -18
+  ZPosRange: 24.5
+  ZNegRange: -27.5
+  YRange: 1.543

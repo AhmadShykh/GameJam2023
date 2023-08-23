@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 6500000}
   - component: {fileID: 5400000}
-  - component: {fileID: 11400000}
   - component: {fileID: 11400004}
+  - component: {fileID: 6953692612404318427}
   m_Layer: 11
   m_Name: HPParticle
   m_TagString: Effect
@@ -84,21 +84,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5bafffb797b47d8bf00d0cfd2058ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  Speed: 100
-  JustOnStart: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +98,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alpha: 1
   FadeSpeed: 2.5
+--- !u!114 &6953692612404318427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cc82bd3ee256d43aa0d7d050393bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 0}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,9 +137,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14571, y: 0.07771, z: -0.000000047477}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalScale: {x: 0.021232046, y: 0.021232046, z: 0.021232046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 400000}
@@ -203,10 +201,10 @@ TextMesh:
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
-  m_FontSize: 504
+  m_FontSize: 500
   m_FontStyle: 2
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: ba26238b9cbfc4c00b86c1648f26f4cd, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278255607
+    rgba: 4278190847

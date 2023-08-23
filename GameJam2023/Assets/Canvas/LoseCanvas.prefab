@@ -376,7 +376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back Luck
+  m_text: Bad Luck
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5676101688da2c6439ed8168a49fcfa9, type: 2}
   m_sharedMaterial: {fileID: 4530290197178593126, guid: 5676101688da2c6439ed8168a49fcfa9,

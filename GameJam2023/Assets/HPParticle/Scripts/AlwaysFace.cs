@@ -16,24 +16,24 @@ public class AlwaysFace : MonoBehaviour {
 	// turn towards target
 	void Start() 
 	{
-		if (Target == null)
-		{
-			return;
-		}
+		//if (Target == null)
+		//{
+		//	return;
+		//}
 
-		Vector3 dir = Target.transform.position - transform.position;
-		Quaternion Rotation = Quaternion.LookRotation(dir);
+		//Vector3 dir = Target.transform.position - transform.position;
+		//Quaternion Rotation = Quaternion.LookRotation(dir);
 		
-		gameObject.transform.rotation = Rotation;
+		//gameObject.transform.rotation = Rotation;
 	}
 	
 	// turn towards target
-	void FixedUpdate () 
+	void Update () 
 	{
-		if (Target == null)
-		{
-			return;
-		}
+		//if (Target == null)
+		//{
+		//	return;
+		//}
 
 		if (JustOnStart == false)
 		{

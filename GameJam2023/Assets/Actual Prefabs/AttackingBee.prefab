@@ -291,6 +291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalHealth: 10
   PushForce: 3
+  HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
+  ForceScatter: 10
 --- !u!114 &6442195335880355986
 MonoBehaviour:
   m_ObjectHideFlags: 0
