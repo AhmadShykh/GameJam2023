@@ -12,14 +12,23 @@ public class QueenDamaging : MonoBehaviour
 	[SerializeField] float ZPos = -19.5f;
 	[SerializeField] float XNegPos = -6.5f;
 	[SerializeField] float XPositivePos = 12.5f;
+	[Header("Particle Effects")]
+	[SerializeField] GameObject HPHitParticle;
+	//[SerializeField] GameObject HPHitParticle;
+
 	
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "bee")
 		{
+			//Apply PushForce and Taking Damage
 			other.gameObject.transform.Translate(new Vector3(0,-1,0) * PushForce);
-			gameObject.GetComponent<Target>().TakeDamage(other.gameObject.GetComponent<BeesAttacking>().Damage);
+			float BeeDamage = other.gameObject.GetComponent<BeesAttacking>().Damage;
+			gameObject.GetComponent<Target>().TakeDamage(BeeDamage);
+			//Apply HP Particle Effect
+			ApplyHpParticleEffect(BeeDamage);
+
 		}
 		else if (other.gameObject.tag == "mushroom")
 		{
@@ -35,5 +44,13 @@ public class QueenDamaging : MonoBehaviour
 		float XPos = Random.Range(XNegPos, XPositivePos);
 		Instantiate(obj, new Vector3(XPos, YPos, ZPos), Quaternion.Euler(-90, 180, 0));
 		Destroy(otherObj);
+	}
+	void ApplyHpParticleEffect(float BeeDamage)
+	{
+		Vector3 ParticlePos = new Vector3(transform.position.x, transform.position.y + 0.7f, transform.position.z);
+		GameObject Particle = Instantiate(HPHitParticle, transform.position, transform.rotation);
+		GameObject HPLabel = Particle.transform.GetChild(0).gameObject;
+		Particle.GetComponent<AlwaysFace>().Target = GameObject.FindGameObjectWithTag("MainCamera");
+		HPLabel.GetComponent<TextMesh>().text = BeeDamage.ToString();
 	}
 }

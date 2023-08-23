@@ -446,6 +446,7 @@ MonoBehaviour:
   ZPos: -28.5
   XNegPos: -0.5
   XPositivePos: 0.5
+  HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
 --- !u!114 &1093897721321303972
 MonoBehaviour:
   m_ObjectHideFlags: 0
