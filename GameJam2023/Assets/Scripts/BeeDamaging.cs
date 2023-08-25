@@ -37,17 +37,16 @@ public class BeeDamaging : MonoBehaviour
                 ApplyHpParticleEffect(AntComponent.Damage,transform.position,new Color(255,0,0));
                 ApplyHpParticleEffect(BeeDamage,other.transform.position,new Color(255,127.5f,0));
             }
-            ApplyHpParticleEffect(AntComponent.Damage);
+            
             if (hitAudioClip != null)
             {
                 audioSource.PlayOneShot(hitAudioClip);
             }
             if (TotalHealth <= 0)
-			{
                 Destroy(gameObject);
-            else if(AntComponent.AntHealth <= 0)
-                Destroy(other.gameObject);
-
+            else if (AntComponent.AntHealth <= 0)
+                    Destroy(other.gameObject);
+            
         }
     }
     void ApplyHpParticleEffect(float AntDamage,Vector3 SpawnLocation,Color HPParticleColor)
