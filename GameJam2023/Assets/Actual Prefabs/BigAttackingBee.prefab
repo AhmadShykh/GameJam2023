@@ -253,8 +253,8 @@ MonoBehaviour:
   BeeDamage: 8
   HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
   ForceScatter: 10
-  hitAudioClip: {fileID: 7143320057484798333}
-  deathOfBeeAudioClip: {fileID: -3026773246324026758}
+  BeeHitClip: {fileID: 7143320057484798333}
+  BeeDeathClip: {fileID: -3026773246324026758}
 --- !u!82 &7143320057484798333
 AudioSource:
   m_ObjectHideFlags: 0

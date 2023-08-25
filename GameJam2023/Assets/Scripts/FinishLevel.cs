@@ -7,16 +7,12 @@ public class FinishLevel : MonoBehaviour
     [SerializeField] Canvas JoyStick;
     [SerializeField] Canvas WinCanvas;
     [SerializeField] Canvas LoseCanvas;
-    [SerializeField] AudioSource winClip;
-    [SerializeField] AudioSource loseClip;
-
+    [SerializeField] AudioClip winClip;
+    [SerializeField] AudioClip loseClip;
+    [SerializeField] AudioSource EventAudioSource;
     public void WinGame()
     {
-        if (winClip != null)
-        {
-            winClip.Play();
-        }
-
+        EventAudioSource.PlayOneShot(winClip);
         Time.timeScale = 0;
         JoyStick.gameObject.SetActive(false);
         WinCanvas.gameObject.SetActive(true);
@@ -24,11 +20,7 @@ public class FinishLevel : MonoBehaviour
 
     public void LoseGame()
     {
-        if (loseClip != null)
-        {
-            loseClip.Play();
-        }
-
+        EventAudioSource.PlayOneShot(loseClip);
         Time.timeScale = 0;
         JoyStick.gameObject.SetActive(false);
         LoseCanvas.gameObject.SetActive(true);

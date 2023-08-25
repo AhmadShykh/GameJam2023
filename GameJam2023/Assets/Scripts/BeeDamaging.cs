@@ -8,12 +8,14 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] float TotalHealth = 10f;
     [SerializeField] float PushForce = 4f;
     [SerializeField] float BeeDamage = 4f;
+    public bool BeeActive = true;
     [Header("Particle Effects")]
     [SerializeField] GameObject HPHitParticle;
     [SerializeField] float ForceScatter = 5f;
     [Header("Audio")]
-    [SerializeField] AudioSource hitAudioClip;
-    [SerializeField] AudioSource deathOfBeeAudioClip;
+    [SerializeField] AudioSource BeeHitClip;
+    [SerializeField] AudioSource BeeDeathClip;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,23 +34,16 @@ public class BeeDamaging : MonoBehaviour
                 //Apply the Hp effect on both simultaneously 
                 ApplyHpParticleEffect(AntComponent.Damage,transform.position,new Color(255,0,0));
                 ApplyHpParticleEffect(BeeDamage,other.transform.position,new Color(255,127.5f,0));
+                //Ant Attacking Bee Audio Effect
+                BeeHitClip.Play();
             }
             
-            if (hitAudioClip != null)
-            {
-                hitAudioClip.Play();
-            }
             if (TotalHealth <= 0)
 			{
-                if(deathOfBeeAudioClip!=null)
-                {
-                    deathOfBeeAudioClip.Play();
-                }
-                Destroy(gameObject);
+                StartCoroutine("PlayAudioClip");
             }
             else if (AntComponent.AntHealth <= 0)
                     Destroy(other.gameObject);
-            
         }
     }
     void ApplyHpParticleEffect(float AntDamage,Vector3 SpawnLocation,Color HPParticleColor)
@@ -60,5 +55,19 @@ public class BeeDamaging : MonoBehaviour
         HPLabel.GetComponent<TextMesh>().text = "-" + AntDamage.ToString();
         HPLabel.GetComponent<TextMesh>().color = HPParticleColor;
         
+    }
+    IEnumerator PlayAudioClip()
+    {
+        if(!BeeDeathClip.isPlaying)
+            BeeDeathClip.Play();
+        BeeActive = false;
+        gameObject.GetComponent<BeesAttacking>().enabled = false;
+        gameObject.GetComponent<Renderer>().enabled = false;
+        foreach (MeshRenderer Bee in GetComponentsInChildren<MeshRenderer>())
+        {
+            Bee.enabled = false;
+        }
+        yield return new WaitForSeconds(1.3f);
+        Destroy(gameObject);
     }
 }

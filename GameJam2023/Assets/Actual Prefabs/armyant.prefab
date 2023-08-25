@@ -397,3 +397,4 @@ MonoBehaviour:
   CanAttack: 0
   Counter: 0
   Damage: 5
+  AntHealth: 12

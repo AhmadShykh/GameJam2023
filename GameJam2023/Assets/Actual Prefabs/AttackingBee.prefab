@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 6442195335880355986}
   - component: {fileID: 1366622314674645592}
   - component: {fileID: 7565625109230316857}
-  - component: {fileID: 3766111006943908641}
+  - component: {fileID: -2921148166809522213}
   m_Layer: 6
   m_Name: AttackingBee
   m_TagString: bee
@@ -293,10 +293,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalHealth: 10
   PushForce: 3
+  BeeDamage: 4
   HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
   ForceScatter: 10
-  hitAudioClip: {fileID: 7565625109230316857}
-  deathOfBeeAudioClip: {fileID: 3766111006943908641}
+  BeeHitClip: {fileID: 7565625109230316857}
+  BeeDeathClip: {fileID: -2921148166809522213}
 --- !u!114 &6442195335880355986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +350,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52228930261949847b8d6c7d078c0138, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -434,7 +435,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &3766111006943908641
+--- !u!82 &-2921148166809522213
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -445,7 +446,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 773cfcfbfa9ee184cbb7a7b5c7d48930, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

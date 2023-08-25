@@ -31,10 +31,11 @@ public class AntAttacking : MonoBehaviour
     bool FindBee()
 	{
         Bee = GameObject.FindGameObjectWithTag("bee");
-        if (Bee == null)
-            return false;
-        else
+        if (Bee.GetComponent<BeeDamaging>().BeeActive && Bee != null)
             return true;
+        else
+            return false;
+        
     }
     void ResetAttackPower()
 	{
