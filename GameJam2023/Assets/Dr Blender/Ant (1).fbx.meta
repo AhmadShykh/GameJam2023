@@ -3,7 +3,22 @@ guid: 1cbd41f6f41b32644815fed5d780b197
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ant Texture
+    second: {fileID: 2100000, guid: 9a7e7a087558877438e20f00d6488289, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Eyes
+    second: {fileID: 2100000, guid: 54710de5fef50514492f80784fa9dfbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sword Texture
+    second: {fileID: 2100000, guid: 5e210b04dac57ea4a88b558ed75a96f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

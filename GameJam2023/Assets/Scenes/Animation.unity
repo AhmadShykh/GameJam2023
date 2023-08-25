@@ -195,7 +195,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1505666765}
   m_SourcePrefab: {fileID: 100100000, guid: bfca62fd65dc4444587badee8c31fa26, type: 3}
---- !u!1001 &299247252
+--- !u!1001 &413887657
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1cbd41f6f41b32644815fed5d780b197,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.661
+      value: -10.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1cbd41f6f41b32644815fed5d780b197,
         type: 3}
@@ -216,7 +216,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1cbd41f6f41b32644815fed5d780b197,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.69
+      value: 42.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1cbd41f6f41b32644815fed5d780b197,
         type: 3}
@@ -253,20 +253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1193022008833122553, guid: 1cbd41f6f41b32644815fed5d780b197,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b8bbc5ecc8986cf42995726d22859a90, type: 2}
-    - target: {fileID: -1193022008833122553, guid: 1cbd41f6f41b32644815fed5d780b197,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: b8bbc5ecc8986cf42995726d22859a90, type: 2}
     - target: {fileID: 919132149155446097, guid: 1cbd41f6f41b32644815fed5d780b197,
         type: 3}
       propertyPath: m_Name
-      value: Ant (1)
+      value: Ant (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -817,4 +807,4 @@ SceneRoots:
   - {fileID: 1209684292}
   - {fileID: 1204642922}
   - {fileID: 822389280}
-  - {fileID: 299247252}
+  - {fileID: 413887657}
