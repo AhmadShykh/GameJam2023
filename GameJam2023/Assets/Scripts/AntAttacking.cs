@@ -5,22 +5,26 @@ using UnityEngine;
 public class AntAttacking : MonoBehaviour
 {
     GameObject Bee;
+    [Header("Ant Attacking Settings")]
     [SerializeField] float BeeSpeed = 5f;
     [SerializeField] float AttackingTime = 5f;
     public bool CanAttack;
     public float Counter = 0;
     [SerializeField] public float Damage = 3f;
     [SerializeField] public float AntHealth = 12;
+    [SerializeField] ParticleSystem SwordHitEffect;
     // Start is called before the first frame update
     void Start()
     {
         CanAttack = true;
+        Bee = GameObject.FindGameObjectWithTag("bee");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(FindBee())
+
+        if(GameObject.FindGameObjectsWithTag("bee").Length!= 0 && FindBee())
 		{
             SetAntAngle(Bee.transform.position);
             transform.position = Vector3.MoveTowards(transform.position, Bee.transform.position, BeeSpeed * Time.deltaTime);
@@ -31,11 +35,16 @@ public class AntAttacking : MonoBehaviour
     bool FindBee()
 	{
         Bee = GameObject.FindGameObjectWithTag("bee");
-        if (Bee.GetComponent<BeeDamaging>().BeeActive && Bee != null)
-            return true;
-        else
-            return false;
+        bool IsBeeActive, findBee = false;
         
+        if (Bee != null )
+		{
+            IsBeeActive = Bee.GetComponent<BeeDamaging>().BeeActive;
+            if (IsBeeActive)
+                findBee = true;
+        }
+
+        return findBee;
     }
     void ResetAttackPower()
 	{
@@ -58,5 +67,11 @@ public class AntAttacking : MonoBehaviour
             YAngle = -90;
         Quaternion direction = Quaternion.Euler(YAngle, angle, 0);
         transform.rotation = direction;
+    }
+    public IEnumerator AntHitEffect()
+	{
+        SwordHitEffect.Play();
+        yield return new WaitForSeconds(SwordHitEffect.main.duration);
+        SwordHitEffect.Stop();
     }
 }

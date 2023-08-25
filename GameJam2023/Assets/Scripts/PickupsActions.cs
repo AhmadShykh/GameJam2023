@@ -14,6 +14,10 @@ public class PickupsActions : MonoBehaviour
     [Header("Speed Potion Settings")]
     [SerializeField] float SpeedIncreasedBy = 3f;
     [SerializeField] float DecreaseSpeedAfter = 4f;
+    [Header("Pickups Particle Effects")]
+    [SerializeField] ParticleSystem HealingEffect;
+    [SerializeField] ParticleSystem SpeedEffect;
+    
     void Update()
     {
         
@@ -23,6 +27,7 @@ public class PickupsActions : MonoBehaviour
         if (other.CompareTag("HealingPotion"))
         {
             Destroy(other.gameObject);
+            StartCoroutine(PlayEffect(HealingEffect, HealingEffect.main.duration));
             float CurrentHealth = this.GetComponent<Target>().currentHealth;
             float MaxHealth = this.GetComponent<Target>().MaxHealth;
             if (CurrentHealth + 10 >= MaxHealth)
@@ -33,6 +38,7 @@ public class PickupsActions : MonoBehaviour
         else if (other.CompareTag("SpawnSpider"))
         {
             Destroy(other.gameObject);
+
             Vector3 randomPosition = new Vector3(
                 Random.Range(-XSpawn, XSpawn),
                 YSpawn,
@@ -43,6 +49,7 @@ public class PickupsActions : MonoBehaviour
         else if (other.CompareTag("SpeedPotion"))
         {
             Destroy(other.gameObject);
+            StartCoroutine(PlayEffect(SpeedEffect, 2));
             this.GetComponent<QueenMovement>().IncreaseSpeed(SpeedIncreasedBy);
             StartCoroutine(DecreaseSpeedAfterDelay());
         }
@@ -52,5 +59,12 @@ public class PickupsActions : MonoBehaviour
     {
         yield return new WaitForSeconds(DecreaseSpeedAfter);
         this.GetComponent<QueenMovement>().IncreaseSpeed(-SpeedIncreasedBy);
+    }
+    IEnumerator PlayEffect(ParticleSystem ParticleEffect, float WaitFor)
+	{
+        ParticleEffect.Play();
+        yield return new WaitForSeconds(WaitFor);
+        ParticleEffect.Stop();
+
     }
 }

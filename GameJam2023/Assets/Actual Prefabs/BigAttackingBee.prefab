@@ -251,6 +251,7 @@ MonoBehaviour:
   TotalHealth: 15
   PushForce: 4
   BeeDamage: 8
+  BeeActive: 1
   HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
   ForceScatter: 10
   BeeHitClip: {fileID: 7143320057484798333}
@@ -266,7 +267,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52228930261949847b8d6c7d078c0138, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -362,7 +363,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 773cfcfbfa9ee184cbb7a7b5c7d48930, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
