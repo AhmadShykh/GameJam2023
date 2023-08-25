@@ -51,6 +51,8 @@ MonoBehaviour:
   MinWait: 6
   MaxWait: 10
   DestoryWait: 12
+  TimeToSpawn: 10
+  ArmyAntPlant: {fileID: 0}
   XPosRange: 20.5
   XNegRange: -18
   ZPosRange: 24.5

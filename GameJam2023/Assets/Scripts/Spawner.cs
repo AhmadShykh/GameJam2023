@@ -3,10 +3,17 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    [Header("Pickups Spawn Settings")]
     public GameObject[] objectsToSpawn;
     public float MinWait = 6f;
     public float MaxWait = 10f;
     public float DestoryWait = 5f;
+    [Header("Plants Spawn Settings ")]
+    [SerializeField] float TimeToSpawn = 10f;
+    [SerializeField] GameObject ArmyAntPlant;
+    [SerializeField] Transform PlantParent;
+    [SerializeField] int MaxSpawnInLevel = 10;
+    [Header("Parameters to Spawn in")]
     [SerializeField] float XPosRange = 0f;
     [SerializeField] float XNegRange = 0f;
     [SerializeField] float ZPosRange = 0f;
@@ -14,10 +21,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] float YRange = 0f;
     private void Start()
     {
-        StartCoroutine(SpawnObjects());
+        StartCoroutine(SpawnPickups());
+        StartCoroutine(SpawnPlants());
     }
 
-    private IEnumerator SpawnObjects()
+    private IEnumerator SpawnPickups()
     {
         while (true)
         {
@@ -27,6 +35,18 @@ public class Spawner : MonoBehaviour
             Vector3 randomPosition = new Vector3(Random.Range(XNegRange, XPosRange), YRange, Random.Range(ZNegRange, ZPosRange));
             GameObject spawnedObject = Instantiate(objectToSpawn, randomPosition, Quaternion.Euler(-90,0,0));
             Destroy(spawnedObject, DestoryWait);
+        }
+    }
+    private IEnumerator SpawnPlants()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(TimeToSpawn);
+            if(GameObject.FindGameObjectsWithTag("flower").Length < MaxSpawnInLevel)
+			{
+                Vector3 randomPosition = new Vector3(Random.Range(XNegRange, XPosRange), 1.006f, Random.Range(ZNegRange, ZPosRange));
+                GameObject spawnedObject = Instantiate(ArmyAntPlant, randomPosition, Quaternion.Euler(-90, 0, 0), PlantParent);
+            }
         }
     }
 }

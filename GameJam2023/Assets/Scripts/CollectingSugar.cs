@@ -58,8 +58,6 @@ public class CollectingSugar : MonoBehaviour
 		{
             GoingLocation = GameObject.FindGameObjectWithTag("sugar").GetComponent<Transform>().position;
             SetAntAngle(transform.position, GoingLocation);
-            
-            
         }
 	}
 	private void OnTriggerEnter(Collider other)
