@@ -8,6 +8,8 @@ public class Target : MonoBehaviour
     public float MaxHealth = 100;
     public float currentHealth;
     public HealthBar healthBar;
+    [Header("Audio")]
+    [SerializeField] AudioSource audioSource;
     void Start()
     {
         currentHealth = MaxHealth;
@@ -20,6 +22,10 @@ public class Target : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0)
         {
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
             Destroy(transform.gameObject);
             FinishLevel Finishing = GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishLevel>();
             Finishing.LoseGame();
