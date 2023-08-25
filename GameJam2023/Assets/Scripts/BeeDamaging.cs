@@ -10,6 +10,15 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] float BeeDamage = 4f;
     [Header("Particle Effects")]
     [SerializeField] GameObject HPHitParticle;
+    [SerializeField] float ForceScatter = 5f;
+    [Header("Audio")]
+    [SerializeField] AudioClip hitAudioClip;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
@@ -28,7 +37,13 @@ public class BeeDamaging : MonoBehaviour
                 ApplyHpParticleEffect(AntComponent.Damage,transform.position,new Color(255,0,0));
                 ApplyHpParticleEffect(BeeDamage,other.transform.position,new Color(255,127.5f,0));
             }
-            if(TotalHealth <= 0)
+            ApplyHpParticleEffect(AntComponent.Damage);
+            if (hitAudioClip != null)
+            {
+                audioSource.PlayOneShot(hitAudioClip);
+            }
+            if (TotalHealth <= 0)
+			{
                 Destroy(gameObject);
             else if(AntComponent.AntHealth <= 0)
                 Destroy(other.gameObject);
