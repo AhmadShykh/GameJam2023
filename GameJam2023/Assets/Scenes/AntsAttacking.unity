@@ -131,11 +131,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3487303261874220990, guid: 43ffc22c02785634bbeabe3dd767632e,
-        type: 3}
-      propertyPath: AntHealth
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 7327056564554345710, guid: 43ffc22c02785634bbeabe3dd767632e,
         type: 3}
       propertyPath: m_Name

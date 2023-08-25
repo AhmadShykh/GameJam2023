@@ -3465,6 +3465,8 @@ MonoBehaviour:
   Counter: 0
   Damage: 7
   AntHealth: 12
+  SwordHitEffect: {fileID: 8460667080445658518, guid: a3e2c3406e02f2c4ba86cfb1604277bd,
+    type: 3}
 --- !u!65 &6493184923723223115
 BoxCollider:
   m_ObjectHideFlags: 0
