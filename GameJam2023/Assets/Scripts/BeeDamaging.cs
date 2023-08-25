@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BeeDamaging : MonoBehaviour
 {
+    [Header("Bee Damaging Parameter")]
     [SerializeField] float TotalHealth = 10f;
     [SerializeField] float PushForce = 4f;
+    [SerializeField] float BeeDamage = 4f;
     [Header("Particle Effects")]
     [SerializeField] GameObject HPHitParticle;
     [SerializeField] float ForceScatter = 5f;
@@ -22,9 +24,14 @@ public class BeeDamaging : MonoBehaviour
             else PushPos = Vector3.forward;
             other.gameObject.transform.Translate(PushPos * PushForce);
             AntAttacking AntComponent = other.gameObject.GetComponent<AntAttacking>();
+            //Decreasing Bee and Ant value at the same time because Bees wont attack Ants but there health will drop automatically 
             if (AntComponent.CanAttack) {
                 TotalHealth -= AntComponent.Damage;
+                AntComponent.AntHealth -= BeeDamage;
                 AntComponent.CanAttack = false;
+                //Apply the Hp effect on both simultaneously 
+                ApplyHpParticleEffect(AntComponent.Damage,transform.position,new Color(255,0,0));
+                ApplyHpParticleEffect(BeeDamage,other.transform.position,new Color(255,127.5f,0));
             }
             ApplyHpParticleEffect(AntComponent.Damage);
             if (hitAudioClip != null)
@@ -38,18 +45,19 @@ public class BeeDamaging : MonoBehaviour
                     deathOfBeeAudioClip.Play();
                 }
                 Destroy(gameObject);
-			}
+            else if(AntComponent.AntHealth <= 0)
+                Destroy(other.gameObject);
 
         }
     }
-    void ApplyHpParticleEffect(float AntDamage)
+    void ApplyHpParticleEffect(float AntDamage,Vector3 SpawnLocation,Color HPParticleColor)
     {
-        Vector3 ParticlePos = new Vector3(transform.position.x, transform.position.y + 10f, transform.position.z);
-        GameObject Particle = Instantiate(HPHitParticle, transform.position, transform.rotation);
+        Vector3 HPParticlePos = new Vector3(SpawnLocation.x, SpawnLocation.y + 0.3f, SpawnLocation.z);
+        GameObject Particle = Instantiate(HPHitParticle, HPParticlePos, transform.rotation);
         Particle.GetComponent<BillBoard>().Camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         GameObject HPLabel = Particle.transform.GetChild(0).gameObject;
         HPLabel.GetComponent<TextMesh>().text = "-" + AntDamage.ToString();
-        HPLabel.GetComponent<TextMesh>().color = new Color(255, 0, 0);
-        Particle.GetComponent<Rigidbody>().AddForce(new Vector3(ParticlePos.x + Random.Range(-ForceScatter, ForceScatter), ParticlePos.y + Random.Range(-ForceScatter, ForceScatter), ParticlePos.z + Random.Range(-ForceScatter, ForceScatter)));
+        HPLabel.GetComponent<TextMesh>().color = HPParticleColor;
+        
     }
 }

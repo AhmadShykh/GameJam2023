@@ -48,8 +48,8 @@ public class QueenDamaging : MonoBehaviour
 	}
 	void ApplyHpParticleEffect(float BeeDamage)
 	{
-		Vector3 ParticlePos = new Vector3(transform.position.x , transform.position.y + 10f, transform.position.z );
-		GameObject Particle = Instantiate(HPHitParticle, transform.position, transform.rotation);
+		Vector3 ParticlePos = new Vector3(transform.position.x , transform.position.y + 3f, transform.position.z );
+		GameObject Particle = Instantiate(HPHitParticle, ParticlePos, transform.rotation);
 		Particle.GetComponent<BillBoard>().Camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		GameObject HPLabel = Particle.transform.GetChild(0).gameObject;
 		HPLabel.GetComponent<TextMesh>().text = "-"+BeeDamage.ToString();

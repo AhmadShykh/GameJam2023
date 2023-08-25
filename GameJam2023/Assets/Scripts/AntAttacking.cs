@@ -10,6 +10,7 @@ public class AntAttacking : MonoBehaviour
     public bool CanAttack;
     public float Counter = 0;
     [SerializeField] public float Damage = 3f;
+    [SerializeField] public float AntHealth = 12;
     // Start is called before the first frame update
     void Start()
     {
