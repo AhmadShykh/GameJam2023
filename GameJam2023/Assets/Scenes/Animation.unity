@@ -261,7 +261,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1cbd41f6f41b32644815fed5d780b197,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1958511883}
   m_SourcePrefab: {fileID: 100100000, guid: 1cbd41f6f41b32644815fed5d780b197, type: 3}
 --- !u!1 &721543147
 GameObject:
@@ -526,12 +530,12 @@ PrefabInstance:
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.598853
+      value: -11.315
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.71
+      value: -2.487
       objectReference: {fileID: 0}
     - target: {fileID: 4708596286934452690, guid: fb9ed8744a3448f40bad9eb18994b391,
         type: 3}
@@ -702,6 +706,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -80.601, z: 0}
+--- !u!1 &1958511882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1cbd41f6f41b32644815fed5d780b197,
+    type: 3}
+  m_PrefabInstance: {fileID: 413887657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1958511883
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958511882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eaf34d54197b3fb45b762b98a49d3372, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2025630445
 GameObject:
   m_ObjectHideFlags: 0
