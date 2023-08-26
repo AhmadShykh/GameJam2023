@@ -18,6 +18,9 @@ TagManager:
   - Spider
   - Effect
   - Projectile
+  - mushroom
+  - Sugar Deposit
+  - Peanut Deposit
   layers:
   - Default
   - TransparentFX

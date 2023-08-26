@@ -7,7 +7,7 @@ public class CollectingSugar : MonoBehaviour
     //Speed of Ant
     [SerializeField] float AntSpeed = 10f;
     
-    bool FoundSugar, HasSugar;
+    bool FoundSugar = false, HasSugar = false;
     Vector3 GoingLocation;
     GameObject StorageLocation;
     [SerializeField] float SugarAmount = 10f;
@@ -78,7 +78,7 @@ public class CollectingSugar : MonoBehaviour
         {
             GoingLocation = transform.position;
             FoundSugar = false;
-            other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
+            if(HasSugar) other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
             HasSugar = false;
         }
     }

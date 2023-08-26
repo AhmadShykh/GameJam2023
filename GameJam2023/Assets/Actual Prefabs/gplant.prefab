@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6895859748387417703}
   - component: {fileID: 8394604515150616634}
   - component: {fileID: 4367014481738262954}
+  - component: {fileID: 3450044377624680835}
   m_Layer: 13
   m_Name: gplant
   m_TagString: flower
@@ -190,3 +191,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05882662, y: 0.031948507, z: 0.10015061}
   m_Center: {x: 0.007129342, y: -0.00027077884, z: 0.05007534}
+--- !u!114 &3450044377624680835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733832269386871460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1fd61db8f2441942a7f411e512277c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Amount: 3
