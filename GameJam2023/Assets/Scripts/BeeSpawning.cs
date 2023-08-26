@@ -48,8 +48,8 @@ public class BeeSpawning : MonoBehaviour
     void SpawnBee(GameObject beeToSpawn)
     {
         if (beeToSpawn == bigBee)
-            YPos = 1.87f;
+            YPos = 1.371f;
         Vector3 randomPosition = new Vector3(Random.Range(XNegPos, XPositivePos), YPos, ZPos);
-        Instantiate(beeToSpawn, randomPosition, Quaternion.Euler(-90,0,0));
+        Instantiate(beeToSpawn, randomPosition, Quaternion.Euler(0,0,0));
     }
 }

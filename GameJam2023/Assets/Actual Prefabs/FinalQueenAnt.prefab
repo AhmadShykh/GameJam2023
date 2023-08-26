@@ -1404,10 +1404,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushForce: 4.5
-  WorkerAnt: {fileID: 7023473350068071357, guid: 0cd40b18c7a6914479eaa11888dd055e,
+  WorkerAnt: {fileID: 1634651703275571326, guid: 6fe87ce87e303ba4aacf969398117452,
     type: 3}
-  ArmyAnt: {fileID: 7327056564554345710, guid: 43ffc22c02785634bbeabe3dd767632e, type: 3}
-  YPos: 1.7
+  ArmyAnt: {fileID: 2789642337171023701, guid: 75e69a774856fd141aaa842ae26205d9, type: 3}
+  YPos: 1.00896
   ZPos: -28.5
   XNegPos: -0.5
   XPositivePos: 0.5

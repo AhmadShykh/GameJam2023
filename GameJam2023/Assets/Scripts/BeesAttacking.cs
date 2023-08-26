@@ -6,6 +6,7 @@ public class BeesAttacking : MonoBehaviour
 {
     GameObject Target;
     [SerializeField] float BeeSpeed = 3f;
+    [SerializeField] float YOffset = 0.7f;
     public float Damage = 5f;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,8 @@ public class BeesAttacking : MonoBehaviour
         if(Target != null)
 		{
             SetAntAngle(Target.transform.position);
-            transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, BeeSpeed * Time.deltaTime);
+            Vector3 TargetPos = new Vector3(Target.transform.position.x, Target.transform.position.y + YOffset, Target.transform.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, TargetPos, BeeSpeed * Time.deltaTime);
         }
         
     }
@@ -28,7 +30,7 @@ public class BeesAttacking : MonoBehaviour
     {
         Vector3 diff = DesPos - transform.position;
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg-90;
-        Quaternion direction = Quaternion.Euler(-90, angle, 0);
+        Quaternion direction = Quaternion.Euler(0, angle, 0);
         transform.rotation = direction;
     }
 

@@ -7,12 +7,13 @@ public class AntAttacking : MonoBehaviour
     GameObject Bee;
     [Header("Ant Attacking Settings")]
     [SerializeField] float BeeSpeed = 5f;
+    [SerializeField] float YOffset = 0.3f;
     [SerializeField] float AttackingTime = 5f;
     public bool CanAttack;
     public float Counter = 0;
     [SerializeField] public float Damage = 3f;
     [SerializeField] public float AntHealth = 12;
-    [SerializeField] ParticleSystem SwordHitEffect;
+    [SerializeField] GameObject SwordHitEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,14 @@ public class AntAttacking : MonoBehaviour
         if(GameObject.FindGameObjectsWithTag("bee").Length!= 0 && FindBee())
 		{
             SetAntAngle(Bee.transform.position);
-            transform.position = Vector3.MoveTowards(transform.position, Bee.transform.position, BeeSpeed * Time.deltaTime);
+            //Checking the bee type using its mass value in rigid body
+            //Did it this way because assigned a single tag to all bees beforehand 
+            if (Bee.GetComponent<Rigidbody>().mass < 1)
+                YOffset = -.2f;
+            else
+                YOffset = -.3f;
+            Vector3 BeePos = new Vector3(Bee.transform.position.x, Bee.transform.position.y + YOffset, Bee.transform.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, BeePos, BeeSpeed * Time.deltaTime);
         }
         if (!CanAttack)
             ResetAttackPower();
@@ -65,10 +73,10 @@ public class AntAttacking : MonoBehaviour
         Quaternion direction = Quaternion.Euler(0, angle, 0);
         transform.rotation = direction;
     }
-    public IEnumerator AntHitEffect()
+    public void AntHitEffect()
 	{
-        SwordHitEffect.Play();
-        yield return new WaitForSeconds(SwordHitEffect.main.duration);
-        SwordHitEffect.Stop();
+        Vector3 LocalPos = new Vector3(transform.localPosition.x, transform.localPosition.y+0.4f, transform.localPosition.z );
+        GameObject Particle = Instantiate(SwordHitEffect, LocalPos,transform.rotation);
+        Particle.transform.Translate(0, 0, -0.65f);
     }
 }

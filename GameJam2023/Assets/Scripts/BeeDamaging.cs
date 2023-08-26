@@ -7,7 +7,7 @@ public class BeeDamaging : MonoBehaviour
     [Header("Bee Damaging Parameter")]
     [SerializeField] float TotalHealth = 10f;
     [SerializeField] float PushForce = 4f;
-    [SerializeField] float BeeDamage = 4f;
+    [SerializeField] public float BeeDamage = 4f;
     public bool BeeActive ;
     [Header("Particle Effects")]
     [SerializeField] GameObject HPHitParticle;
@@ -24,9 +24,8 @@ public class BeeDamaging : MonoBehaviour
         if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
         {
             Vector3 PushPos;
-            if (other.gameObject.tag == "army ant") PushPos = Vector3.down;
+            if (other.gameObject.tag == "army ant") PushPos = Vector3.forward;
             else PushPos = Vector3.forward;
-            other.gameObject.transform.Translate(PushPos * PushForce);
             AntAttacking AntComponent = other.gameObject.GetComponent<AntAttacking>();
             //Decreasing Bee and Ant value at the same time because Bees wont attack Ants but there health will drop automatically 
             if (AntComponent.CanAttack) {
@@ -39,9 +38,9 @@ public class BeeDamaging : MonoBehaviour
                 //Ant Attacking Bee Audio Effect
                 BeeHitClip.Play();
                 //Playing Article Effects
-                StartCoroutine(other.gameObject.GetComponent<AntAttacking>().AntHitEffect());
+                other.gameObject.GetComponent<AntAttacking>().AntHitEffect();
             }
-            
+            other.gameObject.transform.Translate(PushPos * PushForce);
             if (TotalHealth <= 0)
 			{
                 StartCoroutine("PlayAudioClip");
@@ -62,15 +61,14 @@ public class BeeDamaging : MonoBehaviour
     }
     IEnumerator PlayAudioClip()
     {
-        if(!BeeDeathClip.isPlaying)
-            BeeDeathClip.Play();
         BeeActive = false;
         gameObject.GetComponent<BeesAttacking>().enabled = false;
-        gameObject.GetComponent<Renderer>().enabled = false;
         foreach (MeshRenderer Bee in GetComponentsInChildren<MeshRenderer>())
         {
             Bee.enabled = false;
         }
+        if (!BeeDeathClip.isPlaying)
+            BeeDeathClip.Play();
         yield return new WaitForSeconds(1.3f);
         Destroy(gameObject);
     }

@@ -139,10 +139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaveNum: 0
   timeDelay: 45
-  smallBee: {fileID: 6993794414383092057, guid: 7c33fda967f185a408d5dfdca7d9a80b,
-    type: 3}
-  bigBee: {fileID: 5285150530310973823, guid: 471cd082fc5e241459c0c8d8d5d7f071, type: 3}
-  YPos: 1.7
+  smallBee: {fileID: 662746114748920597, guid: 6d313125c66528b419f8d9d560dd3ee0, type: 3}
+  bigBee: {fileID: 479991350381030343, guid: 567f1047367996547b5d5abb844faf20, type: 3}
+  YPos: 1.244
   ZPos: 25.5
   XNegPos: -0.5
   XPositivePos: 0.5

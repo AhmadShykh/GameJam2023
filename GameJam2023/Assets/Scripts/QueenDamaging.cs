@@ -24,7 +24,7 @@ public class QueenDamaging : MonoBehaviour
 		if (other.gameObject.tag == "bee")
 		{
 			//Apply PushForce and Taking Damage
-			other.gameObject.transform.Translate(new Vector3(0,-1,0) * PushForce);
+			other.gameObject.transform.Translate(new Vector3(0,0,1) * PushForce);
 			float BeeDamage = other.gameObject.GetComponent<BeesAttacking>().Damage;
 			gameObject.GetComponent<Target>().TakeDamage(BeeDamage);
 			//Apply HP Particle Effect

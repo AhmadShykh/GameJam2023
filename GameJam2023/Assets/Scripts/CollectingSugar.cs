@@ -44,7 +44,7 @@ public class CollectingSugar : MonoBehaviour
         Vector3 diff = DesPos - CurPos;
         
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg + 270;
-        Quaternion direction = Quaternion.Euler(-90,0,angle);
+        Quaternion direction = Quaternion.Euler(0, angle,0);
         transform.rotation = direction;
     }
     private void DepositSugar()
