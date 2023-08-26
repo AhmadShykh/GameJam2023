@@ -24,5 +24,12 @@ public class QueenMovement : MonoBehaviour
     }
 
     public void IncreaseSpeed(float speed) => QueenSpeed += speed;
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Boundary")
+        {
+            transform.position = transform.position;
+        }
 
+    }
 }

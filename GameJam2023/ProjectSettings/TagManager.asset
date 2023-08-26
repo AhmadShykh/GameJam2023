@@ -17,6 +17,8 @@ TagManager:
   - SpeedPotion
   - NextLevel
   - Spider
+  - Effect
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -33,7 +35,7 @@ TagManager:
   - army ant
   - plants
   - pickups
-  - 
+  - Boundary
   - 
   - 
   - 
