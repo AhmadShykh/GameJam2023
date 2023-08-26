@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class AntAttacking : MonoBehaviour
 {
-    GameObject Bee;
+    
+    //Setting Variables
     [Header("Ant Attacking Settings")]
     [SerializeField] float BeeSpeed = 5f;
     [SerializeField] float YOffset = 0.3f;
     [SerializeField] float AttackingTime = 5f;
+    [SerializeField] float AwayDistance = 0.5f;
     public bool CanAttack;
     public float Counter = 0;
     [SerializeField] public float Damage = 3f;
     [SerializeField] public float AntHealth = 12;
+    [Header("Ant Animation")]
+    [SerializeField] Animator AntAnimator;
+    [Header("Ant Particle Effects")]
     [SerializeField] GameObject SwordHitEffect;
+
+
+    //Other Variables
+    GameObject Bee;
+    bool IsAttacking;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +35,7 @@ public class AntAttacking : MonoBehaviour
     void Update()
     {
 
-        if(GameObject.FindGameObjectsWithTag("bee").Length!= 0 && FindBee())
+        if(GameObject.FindGameObjectsWithTag("bee").Length!= 0 && FindBee() )
 		{
             SetAntAngle(Bee.transform.position);
             //Checking the bee type using its mass value in rigid body
@@ -35,8 +45,12 @@ public class AntAttacking : MonoBehaviour
             else
                 YOffset = -.3f;
             Vector3 BeePos = new Vector3(Bee.transform.position.x, Bee.transform.position.y + YOffset, Bee.transform.position.z);
-            transform.position = Vector3.MoveTowards(transform.position, BeePos, BeeSpeed * Time.deltaTime);
+            if(Vector3.Distance(transform.position,BeePos) > AwayDistance)
+                transform.position = Vector3.MoveTowards(transform.position, BeePos, BeeSpeed * Time.deltaTime);
+            AntAnimator.SetBool("Walk", true);
         }
+        else
+            AntAnimator.SetBool("Walk", false);
         if (!CanAttack)
             ResetAttackPower();
     }
@@ -78,5 +92,16 @@ public class AntAttacking : MonoBehaviour
         Vector3 LocalPos = new Vector3(transform.localPosition.x, transform.localPosition.y+0.4f, transform.localPosition.z );
         GameObject Particle = Instantiate(SwordHitEffect, LocalPos,transform.rotation);
         Particle.transform.Translate(0, 0, -0.65f);
+        //Playing Hit Animation
+        AntAnimator.SetTrigger("Attack");
     }
+	
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "bee")
+        {
+            StartCoroutine("PlayAttackAnim");
+        }
+    }
+
 }

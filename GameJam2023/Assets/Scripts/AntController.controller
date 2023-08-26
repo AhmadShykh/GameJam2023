@@ -14,7 +14,7 @@ AnimatorStateMachine:
     m_Position: {x: 462.70847, y: 102.32985, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7681134198430112163}
-    m_Position: {x: 470, y: 20, z: 0}
+    m_Position: {x: 470, y: -20, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -34,6 +34,12 @@ AnimatorController:
   m_Name: AntController
   serializedVersion: 5
   m_AnimatorParameters:
+  - m_Name: New Int
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: Attack
     m_Type: 4
     m_DefaultFloat: 0

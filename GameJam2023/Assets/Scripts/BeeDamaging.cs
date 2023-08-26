@@ -6,7 +6,6 @@ public class BeeDamaging : MonoBehaviour
 {
     [Header("Bee Damaging Parameter")]
     [SerializeField] float TotalHealth = 10f;
-    [SerializeField] float PushForce = 4f;
     [SerializeField] public float BeeDamage = 4f;
     public bool BeeActive ;
     [Header("Particle Effects")]
@@ -14,12 +13,14 @@ public class BeeDamaging : MonoBehaviour
     [Header("Audio")]
     [SerializeField] AudioSource BeeHitClip;
     [SerializeField] AudioSource BeeDeathClip;
+    [Header("Audio")]
+    [SerializeField] Animator BeeAnimator;
 
-	private void Start()
+    private void Start()
 	{
         BeeActive = true;
 	}
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("army ant" ) || other.gameObject.CompareTag("Spider"))
         {
@@ -40,7 +41,7 @@ public class BeeDamaging : MonoBehaviour
                 //Playing Article Effects
                 other.gameObject.GetComponent<AntAttacking>().AntHitEffect();
             }
-            other.gameObject.transform.Translate(PushPos * PushForce);
+            //other.gameObject.transform.Translate(PushPos * PushForce);
             if (TotalHealth <= 0)
 			{
                 StartCoroutine("PlayAudioClip");
@@ -63,13 +64,10 @@ public class BeeDamaging : MonoBehaviour
     {
         BeeActive = false;
         gameObject.GetComponent<BeesAttacking>().enabled = false;
-        foreach (MeshRenderer Bee in GetComponentsInChildren<MeshRenderer>())
-        {
-            Bee.enabled = false;
-        }
+        BeeAnimator.SetBool("Dead", true);
         if (!BeeDeathClip.isPlaying)
             BeeDeathClip.Play();
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(1.65f);
         Destroy(gameObject);
     }
 }

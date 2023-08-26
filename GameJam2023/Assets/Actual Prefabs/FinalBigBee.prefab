@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3444177641562631307}
   - component: {fileID: 5829955210289978803}
   - component: {fileID: 6570080050580089253}
+  - component: {fileID: 715009391366484124}
   m_Layer: 6
   m_Name: FinalBigBee
   m_TagString: bee
@@ -61,7 +62,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8164184, y: 1.3343208, z: 2.1942527}
+  m_Size: {x: 2.194253, y: 1.3343208, z: 2.1942527}
   m_Center: {x: 0.0027843714, y: 0.24454623, z: 0.6699444}
 --- !u!54 &564547986827632014
 Rigidbody:
@@ -124,6 +125,7 @@ MonoBehaviour:
   HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
   BeeHitClip: {fileID: 5829955210289978803}
   BeeDeathClip: {fileID: 6570080050580089253}
+  BeeAnimator: {fileID: 715009391366484124}
 --- !u!82 &5829955210289978803
 AudioSource:
   m_ObjectHideFlags: 0
@@ -316,6 +318,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &715009391366484124
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479991350381030343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 963ce7c78081aba409652be74cadbbd2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &679446402628014906
 GameObject:
   m_ObjectHideFlags: 0

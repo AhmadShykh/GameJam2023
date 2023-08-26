@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 77518288111904668}
   - component: {fileID: 6165848637550226101}
   - component: {fileID: 7979097520773105127}
+  - component: {fileID: 2553813488867771601}
   m_Layer: 8
   m_Name: FinalWorkerAnt
   m_TagString: worker ant
@@ -290,6 +291,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AntSpeed: 3
   SugarAmount: 10
+  AntAnimator: {fileID: 2553813488867771601}
+--- !u!95 &2553813488867771601
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634651703275571326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 25f955d87cd21dc4eb4f1cb6d75ea809, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1978432364806365107
 GameObject:
   m_ObjectHideFlags: 0

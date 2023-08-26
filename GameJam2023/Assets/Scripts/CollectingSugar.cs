@@ -11,7 +11,8 @@ public class CollectingSugar : MonoBehaviour
     Vector3 GoingLocation;
     GameObject StorageLocation;
     [SerializeField] float SugarAmount = 10f;
-    
+    [Header("Worker Ant Animation")]
+    [SerializeField] Animator AntAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +25,12 @@ public class CollectingSugar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.FindGameObjectsWithTag("sugar").Length != 0 || HasSugar) MoveAnt();
+        if (GameObject.FindGameObjectsWithTag("sugar").Length != 0 || HasSugar) MoveAnt();
+        else AntAnimator.SetBool("Walk", false);
     }
     private void MoveAnt()
 	{
+        AntAnimator.SetBool("Walk", true);
         if (!FoundSugar)
         {
             findSugar();
@@ -73,7 +76,6 @@ public class CollectingSugar : MonoBehaviour
         }
         else if (other.gameObject.tag == "ant storage")
         {
-            Debug.Log("hi");
             GoingLocation = transform.position;
             FoundSugar = false;
             other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
