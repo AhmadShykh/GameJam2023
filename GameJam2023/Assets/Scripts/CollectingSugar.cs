@@ -69,7 +69,7 @@ public class CollectingSugar : MonoBehaviour
         {
             if (HasSugar == false)
             {
-                Destroy(other.gameObject);
+                other.gameObject.GetComponent<PlantResources>().DecreaseAmount(1);
                 HasSugar = true;
                 FoundSugar = true;
             }

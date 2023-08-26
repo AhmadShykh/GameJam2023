@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QueenDamaging : MonoBehaviour
 {
+	//Settings Variables
     [SerializeField] float PushForce = 5f;
 	[Header("Ant Settings")]
 	[SerializeField] GameObject WorkerAnt;
@@ -12,11 +13,15 @@ public class QueenDamaging : MonoBehaviour
 	[SerializeField] float ZPos = -19.5f;
 	[SerializeField] float XNegPos = -6.5f;
 	[SerializeField] float XPositivePos = 12.5f;
+	[SerializeField] GameObject SugarObject;
+	[SerializeField] float SugarAmount ;
+
 	[Header("Particle Effects")]
 	[SerializeField] GameObject HPHitParticle;
 	[SerializeField] float ForceScatter = 5f;
-	//[SerializeField] GameObject HPHitParticle;
 
+	//Other Varaibles
+	bool HasSugar = false;
 	
 
 	private void OnTriggerEnter(Collider other)
@@ -31,20 +36,37 @@ public class QueenDamaging : MonoBehaviour
 			ApplyHpParticleEffect(BeeDamage);
 
 		}
-		else if (other.gameObject.tag == "mushroom")
+		else if (other.gameObject.tag == "sugar")
 		{
-			SpawnAnt(WorkerAnt, other.gameObject);
+			if (!HasSugar)
+			{
+				HasSugar = true;
+				other.gameObject.GetComponent<PlantResources>().DecreaseAmount(1);
+				SugarObject.SetActive(true);
+			}
 		}
 		else if (other.gameObject.tag == "flower")
 		{
 			SpawnAnt(ArmyAnt, other.gameObject);
 		}
+		else if(other.gameObject.tag == "ant storage")
+		{
+			if (HasSugar)
+			{
+				HasSugar = false;
+				Debug.Log("HI");
+				SpawnAnt(WorkerAnt, null);
+				SugarObject.SetActive(false);
+				other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
+			}
+		}
+
 	}
 	void SpawnAnt(GameObject obj,GameObject otherObj)
 	{
 		float XPos = Random.Range(XNegPos, XPositivePos);
 		Instantiate(obj, new Vector3(XPos, YPos, ZPos), Quaternion.Euler(-90, 180, 0));
-		Destroy(otherObj);
+		if(otherObj != null) Destroy(otherObj);
 	}
 	void ApplyHpParticleEffect(float BeeDamage)
 	{

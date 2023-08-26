@@ -17,6 +17,7 @@ public class PickupsActions : MonoBehaviour
     [Header("Pickups Particle Effects")]
     [SerializeField] ParticleSystem HealingEffect;
     [SerializeField] ParticleSystem SpeedEffect;
+    [SerializeField] GameObject SpiderEffect;
     
     void Update()
     {
@@ -44,6 +45,7 @@ public class PickupsActions : MonoBehaviour
                 YSpawn,
                 Random.Range(-ZSpawn, ZSpawn)
             );
+            Instantiate(SpiderEffect, randomPosition, Quaternion.Euler(0, 0, 0));
             GameObject spawnedObject = Instantiate(SpiderObject, randomPosition, Quaternion.Euler(0,0,0));
         }
         else if (other.CompareTag("SpeedPotion"))

@@ -154,8 +154,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.194253, y: 1.3343208, z: 2.1942527}
-  m_Center: {x: 0.0027843714, y: 0.24454623, z: 0.6699444}
+  m_Size: {x: 0.977088, y: 1.3343208, z: 2.1942527}
+  m_Center: {x: -0.01632801, y: 0.24454623, z: 0.6699444}
 --- !u!54 &8713451607119265611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -211,7 +211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TotalHealth: 10
-  PushForce: 3
   BeeDamage: 4
   BeeActive: 1
   HPHitParticle: {fileID: 100000, guid: 57ff52a6b9d134c9689be872547ab590, type: 3}
