@@ -62,10 +62,7 @@ public class AntAttacking : MonoBehaviour
         Vector3 diff = DesPos - transform.position;
 
         float angle = -Mathf.Atan2(diff.z, diff.x) * Mathf.Rad2Deg - 90;
-        float YAngle = 0f;
-        if (this.CompareTag("army ant"))
-            YAngle = -90;
-        Quaternion direction = Quaternion.Euler(YAngle, angle, 0);
+        Quaternion direction = Quaternion.Euler(0, angle, 0);
         transform.rotation = direction;
     }
     public IEnumerator AntHitEffect()
