@@ -48,7 +48,8 @@ public class BeeDamaging : MonoBehaviour
             }
             else if (AntComponent.AntHealth <= 0)
             {
-                StartCoroutine("AntComponent.AntDeathSequence");
+                Debug.Log("HI");
+                StartCoroutine(AntComponent.AntDeathSequence());
             }
         }
     }
@@ -66,10 +67,11 @@ public class BeeDamaging : MonoBehaviour
     {
         BeeActive = false;
         gameObject.GetComponent<BeesAttacking>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
         BeeAnimator.SetBool("Dead", true);
         if (!BeeDeathClip.isPlaying)
             BeeDeathClip.Play();
-        yield return new WaitForSeconds(1.65f);
+        yield return new WaitForSeconds(1.8f);
         Destroy(gameObject);
     }
 }

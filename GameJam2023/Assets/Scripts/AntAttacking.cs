@@ -97,9 +97,13 @@ public class AntAttacking : MonoBehaviour
     }
 	public IEnumerator AntDeathSequence()
 	{
-        AntAnimator.SetBool("Dead", true);
+        AntAnimator.SetTrigger("Dead");
+        gameObject.GetComponent<BoxCollider>().enabled = false;
         gameObject.GetComponent<AntAttacking>().enabled = false;
-        yield return new WaitForSeconds(0.85f);
+        float WaitTime = .9f;
+        if(gameObject.CompareTag("Spider")) 
+            WaitTime = 1.2f;
+        yield return new WaitForSeconds(WaitTime);
         Destroy(gameObject);
 	}
 
