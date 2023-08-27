@@ -15,8 +15,6 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] AudioSource BeeDeathClip;
     [Header("Audio")]
     [SerializeField] Animator BeeAnimator;
-    [Header("Explosion Effect")]
-    [SerializeField] GameObject ExplosionEffect;
 
     private void Start()
 	{
@@ -71,7 +69,6 @@ public class BeeDamaging : MonoBehaviour
         BeeAnimator.SetBool("Dead", true);
         if (!BeeDeathClip.isPlaying)
             BeeDeathClip.Play();
-        Instantiate(ExplosionEffect, transform.position, Quaternion.Euler(0, 0, 0));
         yield return new WaitForSeconds(1.65f);
         Destroy(gameObject);
     }
