@@ -24,10 +24,21 @@ public class QueenDamaging : MonoBehaviour
 			//Apply HP Particle Effect
 			ApplyHpParticleEffect(BeeDamage);
 		}
-		
-
 	}
-	
+	private void OnTriggerStay(Collider other)
+	{
+		if (other.CompareTag("Spikes"))
+		{
+			SpikesDamage Spike = other.GetComponent<SpikesDamage>();
+			if (Spike.CanAttack)
+			{
+				Spike.CanAttack = false;
+				StartCoroutine(Spike.ResetAttackPower());
+				gameObject.GetComponent<Target>().TakeDamage(Spike.SpikeDamage);
+				ApplyHpParticleEffect(Spike.SpikeDamage);
+			}
+		}
+	}
 	void ApplyHpParticleEffect(float BeeDamage)
 	{
 		Vector3 ParticlePos = new Vector3(transform.position.x , transform.position.y + 3f, transform.position.z );

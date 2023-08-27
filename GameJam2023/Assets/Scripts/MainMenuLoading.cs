@@ -6,7 +6,7 @@ public class MainMenuLoading : MonoBehaviour
 {
     [SerializeField] GameObject MainMenu;
     [SerializeField] GameObject LevelScreen;
-	private void Awake()
+	private void Start()
 	{
         if (GameObject.FindGameObjectWithTag("NextLevel").GetComponent<NextLevelScript>().GoingToNextLevel)
         {

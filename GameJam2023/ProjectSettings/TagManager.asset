@@ -21,6 +21,7 @@ TagManager:
   - mushroom
   - Sugar Deposit
   - Peanut Deposit
+  - Spikes
   layers:
   - Default
   - TransparentFX

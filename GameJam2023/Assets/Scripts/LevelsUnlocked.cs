@@ -14,12 +14,12 @@ public class LevelsUnlocked : MonoBehaviour
 
 		if (!PlayerPrefs.HasKey("World" + WorldNum.ToString() + "Levels"))
 			PlayerPrefs.SetInt("World" + WorldNum.ToString() + "Levels", 1);
-		Debug.Log("HI");
 		UnlockLevels();
 				
 	}
 	void UnlockLevels()
 	{
+		Debug.Log(PlayerPrefs.GetInt("World" + WorldNum.ToString() + "Levels"));
 		for(int BtnNum = 1; BtnNum <= PlayerPrefs.GetInt("World" + WorldNum.ToString() + "Levels"); BtnNum++)
 		{
 			LevelButtons[BtnNum - 1].interactable = true;
