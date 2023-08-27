@@ -15,7 +15,11 @@ public class Target : MonoBehaviour
         healthBar.SetMaxHealth(MaxHealth);
     }
 
-    public void TakeDamage(float v)
+	void Update()
+	{
+        CheckFall();	
+	}
+	public void TakeDamage(float v)
     {
         currentHealth -= v;
         healthBar.SetHealth(currentHealth);
@@ -26,4 +30,9 @@ public class Target : MonoBehaviour
             Finishing.LoseGame();
         }
     }
+    void CheckFall()
+	{
+        if (transform.position.y < -0.74)
+            TakeDamage(100);
+	}
 }
