@@ -700,7 +700,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0.000012397766, y: -0.0008544922}
-  m_SizeDelta: {x: 405, y: 3955.204}
+  m_SizeDelta: {x: 405, y: 5628}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5574907486124135994
 CanvasRenderer:
@@ -774,10 +774,12 @@ MonoBehaviour:
 
 
 
-    ASSISTANT GAME ARTIST / MOTIVATOR
+    ASSISTANT GAME ARTISTS / MOTIVATORS
 
 
     @SAJEELISTICWORLD
+
+    @DRBLENDER
 
 
 
@@ -796,7 +798,17 @@ MonoBehaviour:
 
 
 
-    JOYSTICK PACK
+    PLATFORMER PACK
+
+
+    KENNY
+
+
+
+
+
+    JOYSTICK
+    PACK
 
 
     FENERAX STUDIOS
@@ -805,8 +817,7 @@ MonoBehaviour:
 
 
 
-    SKYBOX
-    PACK
+    SKYBOX PACK
 
 
     AVIONX
@@ -815,7 +826,8 @@ MonoBehaviour:
 
 
 
-    SPIDERS PACK
+    SPIDERS
+    PACK
 
 
     DANTE''S ANVIL
@@ -824,11 +836,52 @@ MonoBehaviour:
 
 
 
-    POWERUPS
-    PACK
+    POWERUPS PACK
 
 
     AURYNSKY
+
+
+
+
+
+    SPECIAL
+    EFFECTS
+
+
+    HOVL STUDIO
+
+    TRAVIS GAME ASSETS
+
+
+
+
+
+    LOW POLY FRUIT PICKUPS
+
+
+    REM
+    STORMS
+
+
+
+
+    
+
+    HP PARTICLES
+
+
+    JUSTINGARZA
+
+
+
+
+
+    STYLIZE WATER
+    TEXTURE
+
+
+    LOWLYPOLY
 
 
 
@@ -839,10 +892,10 @@ MonoBehaviour:
 
     YASER AWAN
 
-    AIYAN HUMAYON
+    AIYAN
+    HUMAYON
 
-    MOHSIN
-    MEHMOOD
+    MOHSIN MEHMOOD
 
 
 
@@ -853,11 +906,11 @@ MonoBehaviour:
 
     @SAJEELISTICWORLD
 
-    @BRACKEYS
+    @DRBLENDER
 
 
     AND
-    TO THOSE WHO BELIEVED'
+    TO THOSE WHO BELIEVED...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcacc77eeb3958d4487849e9240132ee, type: 2}
   m_sharedMaterial: {fileID: -6222805798121005934, guid: dcacc77eeb3958d4487849e9240132ee,
@@ -922,7 +975,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -5.1427383, y: 13.653614, z: -11.493797, w: 11.589172}
+  m_margin: {x: -5.1427383, y: 13.653614, z: -11.493797, w: -0.19641262}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
