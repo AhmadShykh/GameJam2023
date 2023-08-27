@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] GameObject ArmyAntPlant;
     [SerializeField] Transform PlantParent;
     [SerializeField] int MaxSpawnInLevel = 10;
+    [SerializeField] float YValue = 5.684f;
     [Header("Parameters to Spawn in")]
     [SerializeField] float XPosRange = 0f;
     [SerializeField] float XNegRange = 0f;
@@ -44,7 +45,7 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(TimeToSpawn);
             if(GameObject.FindGameObjectsWithTag("flower").Length < MaxSpawnInLevel)
 			{
-                Vector3 randomPosition = new Vector3(Random.Range(XNegRange, XPosRange), 1.006f, Random.Range(ZNegRange, ZPosRange));
+                Vector3 randomPosition = new Vector3(Random.Range(XNegRange, XPosRange), YValue, Random.Range(ZNegRange, ZPosRange));
                 GameObject spawnedObject = Instantiate(ArmyAntPlant, randomPosition, Quaternion.Euler(-90, 0, 0), PlantParent);
             }
         }
