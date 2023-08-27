@@ -9,7 +9,9 @@ public class PickupsActions : MonoBehaviour
     [Header("Spider Potion Settings")]
     [SerializeField] GameObject SpiderObject;
     [SerializeField] float XSpawn = 15f;
+    [SerializeField] float XNegSpawn = 15f;
     [SerializeField] float ZSpawn = 25f;
+    [SerializeField] float ZNegSpawn = 25f;
     [SerializeField] float YSpawn = 1.01f;
     [Header("Speed Potion Settings")]
     [SerializeField] float SpeedIncreasedBy = 3f;
@@ -60,9 +62,9 @@ public class PickupsActions : MonoBehaviour
             Destroy(other.gameObject);
 
             Vector3 randomPosition = new Vector3(
-                Random.Range(-XSpawn, XSpawn),
+                Random.Range(XNegSpawn, XSpawn),
                 YSpawn,
-                Random.Range(-ZSpawn, ZSpawn)
+                Random.Range(ZNegSpawn, ZSpawn)
             );
             Instantiate(SpiderEffect, randomPosition, Quaternion.Euler(0, 0, 0));
             GameObject spawnedObject = Instantiate(SpiderObject, randomPosition, Quaternion.Euler(0, 0, 0));
