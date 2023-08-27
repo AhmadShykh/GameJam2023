@@ -19,6 +19,7 @@ public class AntAttacking : MonoBehaviour
     [SerializeField] Animator AntAnimator;
     [Header("Ant Particle Effects")]
     [SerializeField] GameObject SwordHitEffect;
+    [SerializeField] GameObject ExplosionEffect;
 
 
     //Other Variables
@@ -95,6 +96,13 @@ public class AntAttacking : MonoBehaviour
         //Playing Hit Animation
         AntAnimator.SetTrigger("Attack");
     }
-	
+	public IEnumerator AntDeathSequence()
+	{
+        AntAnimator.SetBool("Dead", true);
+        gameObject.GetComponent<AntAttacking>().enabled = false;
+        Instantiate(ExplosionEffect, transform.position, Quaternion.Euler(0, 0, 0));
+        yield return new WaitForSeconds(0.85f);
+        Destroy(gameObject);
+	}
 
 }

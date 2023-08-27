@@ -5,14 +5,18 @@ using UnityEngine;
 public class CollectingSugar : MonoBehaviour
 {
     //Speed of Ant
+    [Header("Sugar Picking Settings")]
     [SerializeField] float AntSpeed = 10f;
-    
+    [SerializeField] float SugarAmount = 10f;
+    [SerializeField] GameObject Sugar;
+    [Header("Worker Ant Animation")]
+    [SerializeField] Animator AntAnimator;
+
+    //Other Variables
     bool FoundSugar = false, HasSugar = false;
     Vector3 GoingLocation;
     GameObject StorageLocation;
-    [SerializeField] float SugarAmount = 10f;
-    [Header("Worker Ant Animation")]
-    [SerializeField] Animator AntAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,14 +76,19 @@ public class CollectingSugar : MonoBehaviour
                 other.gameObject.GetComponent<PlantResources>().DecreaseAmount(1);
                 HasSugar = true;
                 FoundSugar = true;
+                Sugar.SetActive(true);
             }
         }
         else if (other.gameObject.tag == "ant storage")
         {
-            GoingLocation = transform.position;
-            FoundSugar = false;
-            if(HasSugar) other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
-            HasSugar = false;
+            if(HasSugar)
+			{
+                GoingLocation = transform.position;
+                FoundSugar = false;
+                other.gameObject.GetComponent<StoringSugar>().GiveSugar(SugarAmount);
+                HasSugar = false;
+                Sugar.SetActive(false);
+            }
         }
     }
 	

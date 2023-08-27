@@ -224,6 +224,7 @@ Transform:
   m_LocalScale: {x: 0.5669, y: 0.5669, z: 0.5669}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6090853659282713900}
   - {fileID: 1832350544218726763}
   - {fileID: 360007277522816726}
   - {fileID: 7200302958299084971}
@@ -291,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AntSpeed: 3
   SugarAmount: 10
+  Sugar: {fileID: 6066120108955530147}
   AntAnimator: {fileID: 2553813488867771601}
 --- !u!95 &2553813488867771601
 Animator:
@@ -1239,3 +1241,88 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0038156807, y: 0.23059866, z: -0.19444689}
     m_Extent: {x: 0.58981645, y: 1.0935557, z: 0.6042986}
   m_DirtyAABB: 0
+--- !u!1001 &1430512050302128871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 555916437345648386}
+    m_Modifications:
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98418415
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.17714842
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185054085543977284, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_Name
+      value: Sugar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185054085543977284, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43054f85f803c2c4f9c1ff0908cf6780, type: 3}
+--- !u!1 &6066120108955530147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5185054085543977284, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+    type: 3}
+  m_PrefabInstance: {fileID: 1430512050302128871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6090853659282713900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5142332322527559627, guid: 43054f85f803c2c4f9c1ff0908cf6780,
+    type: 3}
+  m_PrefabInstance: {fileID: 1430512050302128871}
+  m_PrefabAsset: {fileID: 0}

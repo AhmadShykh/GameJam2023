@@ -15,6 +15,8 @@ public class BeeDamaging : MonoBehaviour
     [SerializeField] AudioSource BeeDeathClip;
     [Header("Audio")]
     [SerializeField] Animator BeeAnimator;
+    [Header("Explosion Effect")]
+    [SerializeField] GameObject ExplosionEffect;
 
     private void Start()
 	{
@@ -43,11 +45,13 @@ public class BeeDamaging : MonoBehaviour
             }
             //other.gameObject.transform.Translate(PushPos * PushForce);
             if (TotalHealth <= 0)
-			{
-                StartCoroutine("PlayAudioClip");
+            {
+                StartCoroutine("BeeDeathSequence");
             }
             else if (AntComponent.AntHealth <= 0)
-                    Destroy(other.gameObject);
+            {
+                StartCoroutine("AntComponent.AntDeathSequence");
+            }
         }
     }
     void ApplyHpParticleEffect(float AntDamage,Vector3 SpawnLocation,Color HPParticleColor)
@@ -60,13 +64,14 @@ public class BeeDamaging : MonoBehaviour
         HPLabel.GetComponent<TextMesh>().color = HPParticleColor;
         
     }
-    IEnumerator PlayAudioClip()
+    IEnumerator BeeDeathSequence()
     {
         BeeActive = false;
         gameObject.GetComponent<BeesAttacking>().enabled = false;
         BeeAnimator.SetBool("Dead", true);
         if (!BeeDeathClip.isPlaying)
             BeeDeathClip.Play();
+        Instantiate(ExplosionEffect, transform.position, Quaternion.Euler(0, 0, 0));
         yield return new WaitForSeconds(1.65f);
         Destroy(gameObject);
     }
