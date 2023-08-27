@@ -96,12 +96,5 @@ public class AntAttacking : MonoBehaviour
         AntAnimator.SetTrigger("Attack");
     }
 	
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "bee")
-        {
-            StartCoroutine("PlayAttackAnim");
-        }
-    }
 
 }
