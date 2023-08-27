@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 662746114748920597, guid: 6d313125c66528b419f8d9d560dd3ee0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1522016941341152259, guid: 6d313125c66528b419f8d9d560dd3ee0,
         type: 3}
@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 352787512281945541, guid: 75e69a774856fd141aaa842ae26205d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.084
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 352787512281945541, guid: 75e69a774856fd141aaa842ae26205d9,
         type: 3}
@@ -338,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 352787512281945541, guid: 75e69a774856fd141aaa842ae26205d9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5269
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 352787512281945541, guid: 75e69a774856fd141aaa842ae26205d9,
         type: 3}
@@ -379,6 +379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FinalArmyAnt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789642337171023701, guid: 75e69a774856fd141aaa842ae26205d9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -545,7 +550,7 @@ PrefabInstance:
     - target: {fileID: 8688803186435683820, guid: fd02805ee801de64a828e8190cac7784,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -568,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
@@ -578,7 +583,7 @@ PrefabInstance:
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
@@ -588,7 +593,7 @@ PrefabInstance:
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
@@ -603,7 +608,7 @@ PrefabInstance:
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 317038101398718993, guid: 567f1047367996547b5d5abb844faf20,
         type: 3}
@@ -614,6 +619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FinalBigBee
+      objectReference: {fileID: 0}
+    - target: {fileID: 479991350381030343, guid: 567f1047367996547b5d5abb844faf20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

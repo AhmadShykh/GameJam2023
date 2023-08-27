@@ -12,6 +12,6 @@ public class SpawnedSpideyDeath : MonoBehaviour
     private IEnumerator Death()
     {
         yield return new WaitForSeconds(killAfter);
-        Destroy(gameObject);
+        StartCoroutine(gameObject.GetComponent<AntAttacking>().AntDeathSequence());
     }
 }
