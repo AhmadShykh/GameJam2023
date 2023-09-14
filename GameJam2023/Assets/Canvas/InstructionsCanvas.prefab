@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 312, y: 492.9}
+  m_SizeDelta: {x: 312, y: 512.8}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &699669866974826065
 CanvasRenderer:
@@ -74,20 +74,22 @@ MonoBehaviour:
     of the Queen of the Ants.
 
 
-    The Rich land has flowers, mushrooms and sugarcane
-    fields. The Extraction of the juice from the flowers gives Soldier ants which
-    defend their queen.
+    The Rich land has peanuts and sugar cubes. The
+    Collection of the Peanuts from the land gives Soldier ants which defend their
+    queen ant.
 
 
-    The Extraction of juice from the mushroom gives Worker
-    ants who will be responsible to carry our the sugar cubes from the sugarcane
-    fields back to the ants world.
+    The Collection of Sugar from the land gives Worker ants who
+    will be responsible to carry the sugar cubes from the land back to the ants tower.
 
 
-    You need to collect all the sugar cubes
-    in order to progress through the next level...
+    You
+    need to collect all the sugar cubes in order to progress through the next level...
 
-'
+
+    The
+    Main Goal of the game is to collect the sugar cubes either by the queen ant or
+    soldier ants...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcacc77eeb3958d4487849e9240132ee, type: 2}
   m_sharedMaterial: {fileID: -6222805798121005934, guid: dcacc77eeb3958d4487849e9240132ee,

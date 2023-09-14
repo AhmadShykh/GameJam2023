@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2851016355092044608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 13.150024, y: -60.299805}
-  m_SizeDelta: {x: 495.7, y: 342.59985}
+  m_SizeDelta: {x: 495.7, y: 342.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5107539682606915132
 CanvasRenderer:
@@ -699,8 +699,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000012397766, y: -0.0008544922}
-  m_SizeDelta: {x: 405, y: 5628}
+  m_AnchoredPosition: {x: -0.000012397766, y: -0.00062561035}
+  m_SizeDelta: {x: 405, y: 5683}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5574907486124135994
 CanvasRenderer:
@@ -866,7 +866,7 @@ MonoBehaviour:
 
 
 
-    
+
 
     HP PARTICLES
 
@@ -877,8 +877,7 @@ MonoBehaviour:
 
 
 
-    STYLIZE WATER
-    TEXTURE
+    STYLIZE WATER TEXTURE
 
 
     LOWLYPOLY
@@ -887,13 +886,13 @@ MonoBehaviour:
 
 
 
-    SPECIAL THANKS
+    SPECIAL
+    THANKS
 
 
     YASER AWAN
 
-    AIYAN
-    HUMAYON
+    AIYAN HUMAYON
 
     MOHSIN MEHMOOD
 
@@ -901,7 +900,8 @@ MonoBehaviour:
 
 
 
-    SPECIAL THANKS
+    SPECIAL
+    THANKS
 
 
     @SAJEELISTICWORLD
@@ -909,8 +909,7 @@ MonoBehaviour:
     @DRBLENDER
 
 
-    AND
-    TO THOSE WHO BELIEVED...'
+    AND TO THOSE WHO BELIEVED...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dcacc77eeb3958d4487849e9240132ee, type: 2}
   m_sharedMaterial: {fileID: -6222805798121005934, guid: dcacc77eeb3958d4487849e9240132ee,
