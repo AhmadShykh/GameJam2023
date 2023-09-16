@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,10 +26,13 @@ public class QueenMovement : MonoBehaviour
 		{
             QueenAnimation.SetBool("Walk", false);
         }
-        Quaternion RotatingTowards = Quaternion.Euler(0, yaw-90, 0);
+        Quaternion RotatingTowards = Quaternion.Euler(0, yaw-50, 0);
         Quaternion MovingRotation = Quaternion.RotateTowards(transform.rotation, RotatingTowards, RotateSpeed * Time.deltaTime);
         transform.rotation = MovingRotation;
-        transform.Translate(xMover, 0, zMover,Space.World);
+        //Adding a pane value to match the movement with the directoin of the camera
+        float Pane = 40;
+        float XPaneApplied = Mathf.Cos(-Pane) *xMover - Mathf.Sin(-Pane) *zMover, ZPaneApplied = Mathf.Sin(-Pane) * xMover-Mathf.Cos(-Pane) * zMover;
+        transform.Translate(XPaneApplied, 0, ZPaneApplied, Space.World);
     }
 
     public void IncreaseSpeed(float speed) => QueenSpeed += speed;

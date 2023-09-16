@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4305988522492003399}
   - component: {fileID: 3700276150076900165}
   - component: {fileID: 2676767280512622522}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DarkSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 7861603197557082114}
   - component: {fileID: 8313997972342363818}
   - component: {fileID: 2931498932679179261}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CircleSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 1374058738865243070}
   - component: {fileID: 2521798822396321367}
   - component: {fileID: 5515311762418509762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14581,7 +14581,7 @@ GameObject:
   - component: {fileID: 3574362967237534933}
   - component: {fileID: 3574362967237534932}
   - component: {fileID: 3574362967237534935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24508,7 +24508,7 @@ GameObject:
   - component: {fileID: 5808556384790598763}
   - component: {fileID: 6169639351885071502}
   - component: {fileID: 6401344364850693557}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24645,7 +24645,7 @@ GameObject:
   - component: {fileID: 5925275106393286650}
   - component: {fileID: 1929533174638507602}
   - component: {fileID: 4633832449011416396}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24659,14 +24659,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6675508843169928963}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.9063079, z: 0, w: 0.42261827}
   m_LocalPosition: {x: 0, y: 0, z: 0.45}
   m_LocalScale: {x: 0.09941423, y: 0.09941423, z: 0.09941423}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5808556384790598763}
   m_Father: {fileID: 3650638188812647480}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 130, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.14, y: 2.32}
@@ -24767,7 +24767,7 @@ GameObject:
   - component: {fileID: 4206031179044431841}
   - component: {fileID: 1250526515560420135}
   - component: {fileID: 7194393672126311444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sides
   m_TagString: Untagged
   m_Icon: {fileID: 0}
