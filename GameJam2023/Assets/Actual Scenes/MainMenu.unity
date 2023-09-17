@@ -1358,6 +1358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credits
       objectReference: {fileID: 0}
+    - target: {fileID: 998374241845710072, guid: c6155af5824e56f4e8aa92a059daa852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2851016355092044608, guid: c6155af5824e56f4e8aa92a059daa852,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1463,6 +1468,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 737859546}
+    - target: {fileID: 5032999526548977424, guid: c6155af5824e56f4e8aa92a059daa852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336949660087513194, guid: c6155af5824e56f4e8aa92a059daa852,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5690
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629349231207694200, guid: c6155af5824e56f4e8aa92a059daa852,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
