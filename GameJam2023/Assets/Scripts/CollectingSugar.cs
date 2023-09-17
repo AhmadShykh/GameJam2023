@@ -63,7 +63,8 @@ public class CollectingSugar : MonoBehaviour
 	{
 		if (GameObject.FindGameObjectsWithTag("sugar").Length != 0 && !HasSugar)
 		{
-            GoingLocation = GameObject.FindGameObjectWithTag("sugar").GetComponent<Transform>().position;
+            Vector3 SugarLocation = GameObject.FindGameObjectWithTag("sugar").GetComponent<Transform>().position;
+            GoingLocation = new Vector3(SugarLocation.x, 1.008f, SugarLocation.z);
             SetAntAngle(transform.position, GoingLocation);
         }
 	}

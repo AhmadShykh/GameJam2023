@@ -87,8 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ApplyAfter: 3
-  m_Tilt: 30.6
-  m_Pan: 40.6
+  m_Tilt: 36.8
+  m_Pan: 0
   m_Dutch: 0
   m_ZoomScale: 1
   m_FollowAttachment: 1
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Offset: {x: -13.9, y: 13.5, z: -16.4}
+  m_Offset: {x: 0, y: 18.7, z: -24.7}
   m_ApplyAfter: 1
   m_PreserveComposition: 0
 --- !u!1 &4213343241727274153

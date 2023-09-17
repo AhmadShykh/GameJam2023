@@ -7,6 +7,6 @@ public class BillBoard : MonoBehaviour
     public Transform Camera;
     void LateUpdate()
     {
-        transform.LookAt(transform.position + Camera.position);     
+        transform.LookAt(transform.position + Camera.forward);     
     }
 }

@@ -41,9 +41,9 @@ public class AntAttacking : MonoBehaviour
             //Checking the bee type using its mass value in rigid body
             //Did it this way because assigned a single tag to all bees beforehand 
             if (Bee.GetComponent<Rigidbody>().mass < 1)
-                YOffset = -.2f;
+                YOffset = -.16f;
             else
-                YOffset = -.3f;
+                YOffset = -.26f;
             Vector3 BeePos = new Vector3(Bee.transform.position.x, Bee.transform.position.y + YOffset, Bee.transform.position.z);
             if(Vector3.Distance(transform.position,BeePos) > AwayDistance)
                 transform.position = Vector3.MoveTowards(transform.position, BeePos, BeeSpeed * Time.deltaTime);
