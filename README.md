@@ -46,8 +46,7 @@ the chances of winning. Once the bee kills the Queen Ant the level overs, same w
 
 Jungle              |  GraveYard
 :-------------------------:|:-------------------------:
-![WhatsApp Image 2023-10-08 at 19 09 19_fe1e9349](https://github.com/AhmadShykh/GameJam2023/assets/52326090/f9010e72-a6c8-45eb-bb3b-91f28c9a1b4d)
- | ![WhatsApp Image 2023-10-08 at 19 09 46_3678e3ce](https://github.com/AhmadShykh/GameJam2023/assets/52326090/8e0418eb-8ecb-49b5-91e0-c1efc6bf1648)
+![WhatsApp Image 2023-10-08 at 19 09 19_fe1e9349](https://github.com/AhmadShykh/GameJam2023/assets/52326090/f9010e72-a6c8-45eb-bb3b-91f28c9a1b4d) | ![WhatsApp Image 2023-10-08 at 19 09 46_3678e3ce](https://github.com/AhmadShykh/GameJam2023/assets/52326090/8e0418eb-8ecb-49b5-91e0-c1efc6bf1648)
 
 
 **Levels**
@@ -55,8 +54,7 @@ Jungle              |  GraveYard
 These levels shown are of the first the world which is Jungle
 Level 1              |  Level 3
 :-------------------------:|:-------------------------:
-![WhatsApp Image 2023-10-08 at 18 50 43_bc2715f1](https://github.com/AhmadShykh/GameJam2023/assets/52326090/99c5d978-efc8-4bef-b982-ccfd60da5479)
- | ![WhatsApp Image 2023-10-08 at 18 54 13_44243304](https://github.com/AhmadShykh/GameJam2023/assets/52326090/83d1f26d-762f-4a5d-bfc4-0ffa3e66f1ba)
+![WhatsApp Image 2023-10-08 at 18 50 43_bc2715f1](https://github.com/AhmadShykh/GameJam2023/assets/52326090/99c5d978-efc8-4bef-b982-ccfd60da5479) | ![WhatsApp Image 2023-10-08 at 18 54 13_44243304](https://github.com/AhmadShykh/GameJam2023/assets/52326090/83d1f26d-762f-4a5d-bfc4-0ffa3e66f1ba)
 
 
 
