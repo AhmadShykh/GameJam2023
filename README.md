@@ -40,7 +40,7 @@ the chances of winning. Once the bee kills the Queen Ant the level overs, same w
 
 **Main Menu**
 
-![WhatsApp Image 2023-10-08 at 18 48 18_e0187fd0](https://github.com/AhmadShykh/GameJam2023/assets/52326090/8aad2470-a7d4-40b7-8386-072309dce5ef)
+![WhatsApp Image 2023-10-08 at 18 48 18_e192b935](https://github.com/AhmadShykh/GameJam2023/assets/52326090/464db33b-2c4d-4e69-85d4-11e12d05e16d)
 
 **Worlds View**
 
